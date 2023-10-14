@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "material-icons/iconfont/material-icons.css";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e4e4e7;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.h-80vh {
+  height: 80vh;
+}
+
+.error-message {
+  color: rgb(100, 8, 8);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Nav Links two way underline slide */
+.nav-links {
+  display: inline-block;
+}
+
+.nav-links {
+  text-decoration: none;
+  position: relative;
+  display: block;
+}
+
+.nav-links a:before,
+.nav-links a:after {
+  content: "";
+  border-bottom: solid 1px white;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+}
+
+.nav-links a:before {
+  left: 0;
+}
+.nav-links a:after {
+  right: 0;
+}
+
+.nav-links a:hover:before,
+.nav-links a:hover:after,
+.active a:before,
+.active a:after {
+  width: 50%;
+}
+
+.nav-links a:before,
+.nav-links a:after {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* Banner Background */
+.banner-gradient {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+@media only screen and (min-width: 768px) {
+  .banner-gradient {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%);
+  }
+}
+
+/* Banner Links */
+.draw-outline {
+  display: inline-block;
+  border: 2px solid green;
+  text-align: center;
+  text-decoration: none;
+  color: green;
+  position: relative;
+  transition: border-color 0.35s ease-in-out;
+  z-index: 1;
+}
+
+.draw-outline:before,
+.draw-outline:after {
+  border-radius: 0.75rem;
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  box-sizing: content-box;
+  z-index: -1;
+  transition: transform 0.25s ease-in-out;
+  padding-left: 2px;
+}
+
+.draw-outline:before {
+  top: -2px;
+  left: -2px;
+  border-top: 2px transparent solid;
+  border-right: 2px transparent solid;
+}
+
+.draw-outline:after {
+  bottom: -2px;
+  right: -2px;
+  border-bottom: 2px transparent solid;
+  border-left: 2px transparent solid;
+}
+
+.draw-outline:hover {
+  color: purple;
+  transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+  border: 2px transparent green;
+  animation: outline-reset 0.35s 1 forwards;
+}
+
+.draw-outline:hover:before {
+  animation: top-right-border 0.75s 1 0.35s forwards;
+  z-index: 2;
+}
+
+.draw-outline:hover:after {
+  animation: bottom-left-border 0.75s 1 0.875s forwards;
+  z-index: 2;
+}
+
+.draw-outline--tandem:hover:after {
+  animation: bottom-left-border 0.75s 1 0.35s forwards;
+  z-index: 2;
+}
+
+.draw-outline:active:before,
+.draw-outline:active:after {
+  transform: scale(1.05);
+}
+
+.draw-outline {
+  border: 2px solid green;
+  color: green;
+}
+
+@keyframes outline-reset {
+  0% {
+    border-color: green;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+@keyframes top-right-border {
+  0% {
+    border-color: purple;
+    width: 0px;
+    height: 0;
+  }
+  40% {
+    width: 100%;
+    height: 0;
+  }
+  80% {
+    border-color: purple;
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    border-color: purple;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes bottom-left-border {
+  0% {
+    border-color: purple;
+    width: 0px;
+    height: 0;
+  }
+  40% {
+    width: 100%;
+    height: 0;
+  }
+  80% {
+    border-color: purple;
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    border-color: purple;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.transition-height {
+  transition: max-height 1s ease-in-out;
+}
+
+@keyframes reduceHeight {
+  from {
+    height: 750px;
+  }
+  to {
+    height: 300px;
+  }
+}
+
+/* Apply the animation to your container */
+.reduceHeightCan {
+  height: 300px; /* Final height */
+  animation: reduceHeight 1s forwards; /* 1s duration as an example, adjust as needed */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* For Chrome, Safari, and newer versions of Opera */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
