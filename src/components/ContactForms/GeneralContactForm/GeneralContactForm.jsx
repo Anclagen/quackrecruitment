@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import { Form, Formik, Field, ErrorMessage } from "formik";
 import ErrorBoundary from "../ErrorBoundary";
@@ -16,7 +17,7 @@ const GeneralContactForm = () => {
         formData.append(key, values[key]);
       }
 
-      const response = await fetch("https://content.quackspecialists.co.uk/wp-json/contact-form-7/v1/contact-forms/6/feedback", {
+      const response = await fetch("https://content.quackspecialists.co.uk/wp-json/contact-form-7/v1/contact-forms/10/feedback", {
         method: "POST",
         body: formData,
       });
