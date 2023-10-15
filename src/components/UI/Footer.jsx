@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-10 border-t border-violet-300 pt-6">
           {/* Logo and Description */}
           <div className="text-center col-span-full lg:col-span-1">
-            <img src="/interface/qs-logo-transparent.png" alt="Company Logo" className="mb-2 w-full max-w-lg mx-auto" />
+            <img src="/logos/temp-logo-white.png" alt="Company Logo" className="mb-2 w-22 mx-auto" />
           </div>
 
           {/* Useful Links */}
@@ -31,11 +31,10 @@ const Footer = () => {
             <ul>
               {[
                 { path: "/", label: "Home" },
-                { path: "/vacancies", label: "Vacancies" },
-                { path: "/register", label: "Register" },
+                { path: "/opportunities", label: "Opportunities" },
                 { path: "/training", label: "Training" },
-                { path: "/legal", label: "Legal" },
                 { path: "/about", label: "About" },
+                { path: "/legal", label: "Legal" },
                 { path: "/contact", label: "Contact" },
               ].map((route) => (
                 <li key={route.path}>
@@ -47,9 +46,20 @@ const Footer = () => {
             </ul>
           </div>
           <div className="px-2">
-            <h3 className="mb-3 text-xl font-bold">Courses</h3>
+            <h3 className="mb-3 text-xl font-bold">Services</h3>
+            <ul>
+              {[{ path: "/#", label: "Assisted Advertising" }].map((route) => (
+                <li key={route.path}>
+                  <Link href={`sector${route.path}`} className={`${location === route.path ? "underline" : ""} hover:underline hover:text-white text-white text-lg`}>
+                    {route.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <h3 className="mt-4 mb-3 text-xl font-bold">Courses</h3>
             <ul>
               {[
+                { path: "/#", label: "Assisted Advertising" },
                 { path: "/#", label: "Warehouse & Logistics" },
                 { path: "/#", label: "Admin & Customer Service" },
                 { path: "/#", label: "CSCS and SIA Security" },
@@ -90,7 +100,7 @@ const Footer = () => {
             <p>Quack Recruitment, Business & Technology Centre, Bessemer Drive, Stevenage, SG1 2DX </p>
             <p>
               Company number:{" "}
-              <a href="https://find-and-update.company-information.service.gov.uk/company/11066952" className="text-violet-300">
+              <a target="_blank" href="https://find-and-update.company-information.service.gov.uk/company/11066952" className="text-violet-300">
                 11066952
               </a>
             </p>

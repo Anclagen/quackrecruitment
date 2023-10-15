@@ -1,5 +1,5 @@
 import Banner from "@/components/Banner/Banner";
-export default function Employers() {
+export default function Services() {
   return (
     <main className="flex flex-grow flex-col items-center justify-between">
       <Banner

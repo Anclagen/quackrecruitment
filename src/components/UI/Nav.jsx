@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -34,16 +35,21 @@ const Nav = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div>
-          <img src="/logos/full-logo.png" alt="Logo" className="h-12" />
+          <Link className="flex flex-row" href="/" title="home">
+            <img src="/logos/temp-logo-white.png" alt="Logo" className="h-12" />
+            <div className="flex flex-col ml-3 text-white text-xl font-medium">
+              <span>Quack</span>
+              <span>Recruitment</span>
+            </div>
+          </Link>
         </div>
         {/* Logo and Desktop Links here */}
-        <ul className="hidden sm:flex space-x-5 pr-2">
+        <ul className="hidden md:flex space-x-5 pr-2">
           {[
             { path: "/", label: "Home" },
-            { path: "/vacancies", label: "Vacancies" },
-            { path: "/register", label: "Register" },
+            { path: "/opportunities", label: "Opportunities" },
             { path: "/training", label: "Training" },
-            { path: "/legal", label: "Legal" },
+            { path: "/services", label: "Services" },
             { path: "/about", label: "About" },
             { path: "/contact", label: "Contact" },
           ].map((route) => (
@@ -55,16 +61,16 @@ const Nav = () => {
           ))}
         </ul>
         {/* Mobile Menu Icon */}
-        <button ref={menuButtonRef} className="sm:hidden" onClick={() => setMenuOpen(!isMenuOpen)}>
+        <button ref={menuButtonRef} className="md:hidden text-white" onClick={() => setMenuOpen(!isMenuOpen)}>
           <i className="material-icons  pointer-events-none pt-1">menu</i>
           <span className="sr-only">Open menu</span>
         </button>
       </div>
 
       {/* Mobile Menu */}
-      <div ref={menuRef} className={`fixed top-0 right-0 h-full bg-black bg-opacity-90 w-64 transform transition-transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"} sm:hidden`}>
+      <div ref={menuRef} className={`fixed top-0 right-0 h-full bg-black bg-opacity-90 w-64 transform transition-transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}>
         {/* Close button */}
-        <div className="flex justify-end p-2">
+        <div className="flex justify-end p-2 text-white">
           <button onClick={handleMenuClose}>
             <span className="material-icons  pointer-events-none">close</span>
             <span className="sr-only">Close menu</span>
@@ -74,8 +80,9 @@ const Nav = () => {
         <ul className="flex flex-col space-y-4 p-4">
           {[
             { path: "/", label: "Home" },
-            { path: "/jobs", label: "Jobs" },
-            { path: "/employers", label: "Employers" },
+            { path: "/opportunities", label: "Opportunities" },
+            { path: "/training", label: "Training" },
+            { path: "/services", label: "Services" },
             { path: "/about", label: "About" },
             { path: "/contact", label: "Contact" },
           ].map((route) => (
