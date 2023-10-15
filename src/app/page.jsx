@@ -1,16 +1,20 @@
-"use client";
 import BannerHome from "../components/Banner/BannerHome";
 import Section from "../components/Sections/Section";
-import FadeInSection from "../components/Sections/FadeInSection/FadeInSection";
+import FadeInFreeTextSection from "@/components/Sections/FadeInFreeFormatSection/FadeInFreeFormateSection";
 import { CardMinimalIconTop, TestimonialCard } from "../components/Card/Card";
 import CardSection from "../components/Sections/CardSection/CardSection";
 import Link from "next/link";
 import { keywords } from "../components/data/keywords";
-import { whyChooseUs } from "../components/data/home-data";
-import { sectors } from "../components/data/sectors";
-import FourImageFeature from "../components/Sections/FourImageFeature/FourImageFeature";
+import FourImageStretch from "@/components/Sections/FourImageFeature/FourImageStretch";
 import CTASection from "../components/Sections/CTASection/CTASection";
 import Head from "next/head";
+
+export const metadata = {
+  title: "Quack Recruitment",
+  description: "Quack Recruitment, your local recruitment specialist.",
+  keywords: ["Quack Group", "Quack Recruitment", "Jobs", "Training", "Recruiters", "Recruitment"],
+  authors: [{ name: "Alexander Barrett", url: "https://github.com/Anclagen" }],
+};
 
 const Home = () => {
   return (
@@ -21,41 +25,79 @@ const Home = () => {
         <title>Home</title>
         <meta name="description" content="Welcome to Quack Specialists, your local recruitment specialist" key="description" />
         <meta name="keywords" content={keywords} key="keywords" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
       </Head>
       <main>
         <BannerHome
           title="Quack Recruitment"
           slogan="Turn Passion into Profession."
-          imgSrc="/pexels-olga-lioncat-7245326.jpg"
+          imgSrc="images/banners/pexels-sevenstorm-juhaszimrus-443383.jpg"
           imgAlt="Descriptive Image Alt Text"
           links={[
-            { label: "Vacancies", path: "/vacancies", color: "violet" },
-            { label: "Register", path: "/register", color: "violet" },
+            { label: "Opportunities", path: "/opportunities", color: "violet" },
             { label: "Training", path: "/training", color: "violet" },
           ]}
         />
         <Section bgColor="bg-zinc-200">
-          <FourImageFeature
-            title="Our Services"
-            details="QS Recruiters specializes in staffing solutions for Meat & Food Processing, Engineering & Construction, and Warehousing & Logistics sectors. With our rich experience, we expertly match candidates from entry to management levels across various specialized fields. Having originated in the Warehousing & Logistics sector, we've established a stellar reputation, recruiting for prestigious brands and ensuring rewarding partnerships between clients and candidates through our specialized recruitment approach."
-            linkDetails={sectors}
-          />
+          <FourImageStretch
+            title="Who Are We?"
+            images={[
+              { src: "/images/pexels-edmond-dantès-4343030.jpg", alt: "Office workers relaxing in lobby" },
+              { src: "/images/pexels-kampus-production-8171221.jpg", alt: "Office workers in meeting room" },
+              { src: "/images/pexels-yan-krukau-8867482.jpg", alt: "Call center workers posing for photo" },
+              { src: "/images/pexels-mart-production-7709219.jpg", alt: "Office with works at desks." },
+            ]}
+          >
+            <p className="mt-4 text-lg leading-6">
+              {
+                " Year after year, Quack Recruitment has soared to new heights, marking our journey with incredible growth. We've proudly partnered with an array of household names, and our most recent financial year saw the best final quarter in our history. This comprised managing over four hundred temporary workers for just one of our major clients in Burton on Trent, reflecting a weekly wage bill surpassing £140k."
+              }
+            </p>
+            <p className="mt-4 text-lg leading-6">
+              While our association with renowned brands is a feather in our cap, we are equally proud to support smaller, family-run businesses. These enterprises value our flexibility, as we craft
+              recruitment models to fit their unique needs — from businesses with a mere 5 employees to extensive on-site managed services for 400+ temporary workers.
+            </p>
+            <p className="mt-4 text-lg leading-6">
+              {
+                "At Quack Recruitment, we understand that volume is just one aspect of our commitment. Compliance and trustworthiness remain paramount. Our clients take solace in the fact that we're affiliated with leading industry bodies across our sectors, spanning warehouse & logistics to food and production. Our promise? Delivering with integrity, every step of the way."
+              }
+            </p>
+            <div className="text-center my-10">
+              <Link
+                className="py-4 px-6  bg-violet-900 hover:bg-violet-600 focus:ring-violet-500 focus:ring-offset-violet-200 text-white w-full transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+                href="/about"
+              >
+                Learn More
+              </Link>
+            </div>
+          </FourImageStretch>
         </Section>
         <Section bgColor="bg-zinc-950 text-white">
-          <FadeInSection
-            title="Who We Are"
-            imageSrc="/pexels-yan-krukau-8867482.jpg"
-            imageAlt="Description"
-            text={[
-              "Quack Specialists are a dedicated team of expert consultants with specialisms in your sector, as opposed to a typical generic high street generalist recruiter.",
-              "We focus on three very specific industries as this has become our niche, these industries are; Meat, Engineering & Construction and Warehouse & Logistics. Our team work collectively in making sure that every step of the process is seamless from on boarding to candidate attrition management.",
-            ]}
-            linkText="Learn More"
-            linkHref="/about"
-            dark={true}
-          />
+          <FadeInFreeTextSection title="Our Comprehensive Recruitment Solutions" imageSrc="/images/interview-1.jpg" imageAlt="Description" dark={true}>
+            <h3 className="mt-4 text-xl font-semibold leading-6">Assisted Advertising</h3>
+            <p className="mt-4 text-lg leading-6">
+              Quack Recruitment streamlines your job advertising across our platforms, widening your candidate reach. Tailor our services to either pre-screen candidates or receive a full candidate
+              list for your internal hiring process. Never overlook top talent again.
+            </p>
+            <h3 className="mt-4 text-xl font-semibold leading-6">Temporary Recruitment</h3>
+            <p className="mt-4 text-lg leading-6">
+              Facing unexpected staffing needs? Quack Recruitment has you covered. From sudden departures to short-term projects, we alleviate the challenges of hiring temporary staff, ensuring you
+              have the right talent when needed.
+            </p>
+            <h3 className="mt-4 text-xl font-semibold leading-6">Permanent Recruitment</h3>
+            <p className="mt-4 text-lg leading-6">
+              {
+                "Quack Recruitment simplifies your permanent hiring. For new roles or replacing crucial staff, we offer tailored solutions to find the perfect addition to your team. Share your requirements; we'll handle the rest."
+              }
+            </p>
+            <div className="text-center mt-10">
+              <Link
+                href="/services"
+                className="py-4 px-6  bg-violet-900 hover:bg-violet-600 focus:ring-violet-500 focus:ring-offset-violet-200 text-white w-full transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg  mx-5 mt-auto"
+              >
+                Our Services
+              </Link>
+            </div>
+          </FadeInFreeTextSection>
         </Section>
         <Section bgColor="bg-zinc-200">
           <CTASection
@@ -64,27 +106,107 @@ const Home = () => {
             text="Let us guide you towards a career that aligns with your skills and passions."
             linkText="Register Today"
             linkHref="/register-candidate"
-            image="/tools.png"
+            image="/images/tools.png"
             reverse={true}
           />
         </Section>
         <Section bgColor="bg-zinc-950 text-white">
           <h2 className="text-3xl text-center mb-10 font-semibold">Why Choose QS Recruitment?</h2>
           <CardSection>
-            <CardMinimalIconTop title={whyChooseUs[0].title} icon={whyChooseUs[0].icon.name} color={`text-${whyChooseUs[0].icon.color} text-8xl`} textColor="text-white" text={whyChooseUs[0].text} />
-            <CardMinimalIconTop title={whyChooseUs[1].title} icon={whyChooseUs[1].icon.name} color={`text-${whyChooseUs[1].icon.color} text-8xl`} textColor="text-white" text={whyChooseUs[1].text} />
-            <CardMinimalIconTop title={whyChooseUs[2].title} icon={whyChooseUs[2].icon.name} color={`text-${whyChooseUs[2].icon.color} text-8xl`} textColor="text-white" text={whyChooseUs[2].text} />
-            <CardMinimalIconTop title={whyChooseUs[3].title} icon={whyChooseUs[3].icon.name} color={`text-${whyChooseUs[3].icon.color} text-8xl`} textColor="text-white" text={whyChooseUs[3].text} />
-            <CardMinimalIconTop title={whyChooseUs[4].title} icon={whyChooseUs[4].icon.name} color={`text-${whyChooseUs[4].icon.color} text-8xl`} textColor="text-white" text={whyChooseUs[4].text} />
+            <CardMinimalIconTop
+              title="Compliant Provider"
+              icon="lock"
+              color={`text-blue-400 text-8xl`}
+              textColor="text-white"
+              text="Licensed by GLAA, we prioritize regulatory adherence in every operation, ensuring ethical recruitment practices."
+            />
+            <CardMinimalIconTop
+              title="Expert Team"
+              icon="school"
+              color={`text-indigo-400 text-8xl`}
+              textColor="text-white"
+              text="Our Senior Consultants aren’t just seasoned—they're specialists in niche fields, bringing top-tier expertise to every hire."
+            />
+            <CardMinimalIconTop
+              title="Quality Guaranteed"
+              icon="award_star"
+              color={`text-yellow-400 text-8xl`}
+              textColor="text-white"
+              text="Dedicated to a seamless experience, our team is always on standby, ensuring support whenever you need."
+            />
+            <CardMinimalIconTop
+              title="Tailored Solutions"
+              icon="cut"
+              color={`text-teal-400 text-8xl`}
+              textColor="text-white"
+              text="Every organization is unique. We offer customized recruitment models, catering to both small businesses and major corporations."
+            />
+            <CardMinimalIconTop
+              title="Diverse Hiring Capabilities"
+              icon="diversity_2"
+              color={`text-green-400 text-8xl`}
+              textColor="text-white"
+              text="From role advertising to sudden staffing shifts or finding the ideal permanent hire, we turn your challenges into opportunities."
+            />
+            <CardMinimalIconTop
+              title="Industry Affiliation"
+              icon="share"
+              color={`text-red-400 text-8xl`}
+              textColor="text-white"
+              text="Registered with leading industry affiliates, our credentials highlight our commitment to recruitment excellence."
+            />
           </CardSection>
           <div className="text-center mt-10">
             <Link
-              href="/employers"
+              href="/services"
               className="py-4 px-6  bg-violet-900 hover:bg-violet-600 focus:ring-violet-500 focus:ring-offset-violet-200 text-white w-full transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg  mx-5 mt-auto"
             >
               Our Services
             </Link>
+            <Link
+              href="/jobs"
+              className="py-4 px-6  bg-violet-900 hover:bg-violet-600 focus:ring-violet-500 focus:ring-offset-violet-200 text-white w-full transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg  mx-5 mt-auto"
+            >
+              Opportunities
+            </Link>
           </div>
+        </Section>
+        <Section bgColor="bg-zinc-200">
+          <FourImageStretch
+            title="Unleash Your Potential with Our Training Programs"
+            images={[
+              { src: "images/pexels-christina-morillo-1181524.jpg", alt: "Woman sitting at desk" },
+              { src: "images/pexels-movidagrafica-barcelona-1474993.jpg", alt: "Welder at work" },
+              { src: "images/pexels-cottonbro-studio-3205737.jpg", alt: "Security camera on wall" },
+              { src: "images/pexels-elevate-1267338.jpg", alt: "Forklift moving pallet in warehouse" },
+            ]}
+          >
+            <p className="mt-4 text-lg leading-6">
+              {
+                "Embarking on a new career journey or looking to advance in your current role? Dive deep into our specialized training courses tailored for real-world challenges. From the dynamic environment of warehouse & logistics, the intricate tasks in admin & customer service, to the rigorous demands of CSCS and SIA security courses, we've got you covered."
+              }
+            </p>
+            <p className="mt-4 text-lg leading-6">
+              <b>Multiple Training Locations:</b>{" "}
+              {"Our training centers are strategically located to cater to a diverse group of trainees. Whether you're from Walsall, Northampton, or Stevenage, there's a venue near you."}
+            </p>
+            <p className="mt-4 text-lg leading-6">
+              <b>Certifications & Accreditations:</b>
+              {" Our courses aren't just about learning; they're about achieving recognized certifications that boost your employability. Stay tuned for detailed insights on our accreditations!"}
+            </p>
+            <p className="mt-4 text-lg leading-6">
+              <b>More Details Coming Soon:</b>
+              {" We're in the process of fine-tuning our offerings. Check back soon for comprehensive course details, schedules, and more."}
+            </p>
+            <div className="text-center my-10">
+              <Link
+                className="py-4 px-6  bg-violet-900 hover:bg-violet-600 focus:ring-violet-500 focus:ring-offset-violet-200 text-white w-full transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+                href="/training"
+              >
+                Learn More
+              </Link>
+            </div>
+          </FourImageStretch>
         </Section>
         {/* <Section bgColor="bg-zinc-200">
           <CTASection
@@ -93,7 +215,7 @@ const Home = () => {
             text="QS Recruitment ensures you get the talent you require. We manage all aspects, granting you peace of mind that your roles are expertly filled."
             linkText="Enquire Today"
             linkHref="/register-employer"
-            image="/hardhat.png"
+            image="/images/hardhat.png"
           />
         </Section> */}
 

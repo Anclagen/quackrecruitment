@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Not Found",
+  description: "Quack Recruitment, your local recruitment specialist.",
+};
+
 const NoPage = () => {
   return (
     <section className="flex items-center h-full p-16 bg-gray-50 text-gray-800 grow">
