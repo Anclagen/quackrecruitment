@@ -1,4 +1,3 @@
-"use client";
 import Section from "@/components/Sections/Section";
 import ExpandableSection from "@/components/ExpandableSection/ExpandableSection";
 

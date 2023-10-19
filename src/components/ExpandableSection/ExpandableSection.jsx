@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { useSpring, animated, config } from "react-spring";
 import useMeasure from "react-use-measure";
