@@ -5,7 +5,7 @@ import { Roboto } from "next/font/google";
 import Nav from "@/components/UI/Nav";
 import Footer from "@/components/UI/Footer";
 
-const inter = Roboto({ subsets: ["latin"], weight: ["100", "400", "500", "700", "900"] });
+const inter = Roboto({ subsets: ["latin"], weight: ["100", "400", "500", "700", "900"], style: ["normal", "italic"] });
 
 export default function RootLayout({ children }) {
   return (
