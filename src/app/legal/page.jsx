@@ -6,19 +6,19 @@ import FourImageStretch from "../../components/Sections/FourImageFeature/FourIma
 import FadeInFreeTextSection from "@/components/Sections/FadeInFreeFormatSection/FadeInFreeFormateSection";
 
 export const metadata = {
-  title: "Services | Quack Recruitment",
-  description: "See what Quack Recruitment has to offer.",
+  title: "Legal | Quack Recruitment",
+  description: "Learn about Quack Recruitment, who we are and what we can do for you.",
   keywords: ["Quack Group", "Quack Recruitment", "Jobs", "Training", "Recruiters", "Recruitment"],
   authors: [{ name: "Alexander Barrett", url: "https://github.com/Anclagen" }],
 };
 
-const Services = () => {
+const Legal = () => {
   return (
     <>
-      <BannerHome title="Services" slogan="A Dedicated & Experienced Team Of Experts" imgSrc="images/banners/pexels-pavel-danilyuk-8112196.jpg" imgAlt="Group opf people looking at a computer" />
+      <BannerHome title="Legal" slogan="A Dedicated & Experienced Team Of Experts" imgSrc="images/banners/pexels-yan-krukau-7691705.jpg" imgAlt="Group opf people looking at a computer" />
       <Section bgColor="bg-zinc-950 text-white">
         <FourImageStretch
-          title="What Can We Do For You"
+          title="Who We Are"
           reverse={false}
           dark={true}
           images={[
@@ -90,4 +90,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Legal;

@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -39,7 +38,7 @@ const Nav = () => {
             <img src="/logos/temp-logo-white.png" alt="Logo" className="h-12" />
             <div className="flex flex-col ml-3 text-white text-xl font-medium">
               <span>Quack</span>
-              <span>Recruitment</span>
+              <span>Recruitment & Training</span>
             </div>
           </Link>
         </div>
@@ -47,10 +46,10 @@ const Nav = () => {
         <ul className="hidden md:flex space-x-5 pr-2">
           {[
             { path: "/", label: "Home" },
-            { path: "/opportunities", label: "Opportunities" },
+            { path: "/recruitment", label: "Recruitment" },
             { path: "/training", label: "Training" },
-            { path: "/services", label: "Services" },
             { path: "/about", label: "About" },
+            { path: "/legal", label: "Legal" },
             { path: "/contact", label: "Contact" },
           ].map((route) => (
             <li key={route.path}>
@@ -80,10 +79,10 @@ const Nav = () => {
         <ul className="flex flex-col space-y-4 p-4">
           {[
             { path: "/", label: "Home" },
-            { path: "/opportunities", label: "Opportunities" },
+            { path: "/recruitment", label: "Recruitment" },
             { path: "/training", label: "Training" },
-            { path: "/services", label: "Services" },
             { path: "/about", label: "About" },
+            { path: "/legal", label: "Legal" },
             { path: "/contact", label: "Contact" },
           ].map((route) => (
             <li key={route.path}>

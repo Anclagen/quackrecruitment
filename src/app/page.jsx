@@ -33,7 +33,7 @@ const Home = () => {
           imgSrc="images/banners/pexels-sevenstorm-juhaszimrus-443383.jpg"
           imgAlt="Descriptive Image Alt Text"
           links={[
-            { label: "Opportunities", path: "/opportunities", color: "violet" },
+            { label: "Recruitment", path: "/recruitment", color: "violet" },
             { label: "Training", path: "/training", color: "violet" },
           ]}
         />

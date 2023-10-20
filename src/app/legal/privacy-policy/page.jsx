@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
       <main>
         <Section bgColor="bg-zinc-200">
           <h1 className="text-2xl font-bold leading-8 text-black sm:text-3xl sm:leading-9 text-center mb-10">Privacy Policy</h1>
-          <div className="mx-auto max-w-screen-md bg-zinc-50 p-3 px-3 sm:px-10">
+          <div className="mx-auto max-w-screen-md bg-zinc-50 p-3 px-3 sm:px-10 mb-5">
             <p className="my-2 italic">{"Quack Group Ltd – GDPR & Privacy Policy 2023"}</p>
 
             <p className="my-2">

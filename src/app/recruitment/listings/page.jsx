@@ -1,19 +1,19 @@
-import BannerHome from "@/components/Banner/BannerHome";
+import BannerHalf from "@/components/Banner/BannerHalf";
 import Section from "@/components/Sections/Section";
 
 export const metadata = {
-  title: "Opportunities | Quack Recruitment",
+  title: "Listings | Quack Recruitment",
   description: "Check out our latest opportunities and find that dream job for you today!",
   keywords: ["Quack Group", "Quack Recruitment", "Jobs", "Training", "Recruiters", "Recruitment"],
   authors: [{ name: "Alexander Barrett", url: "https://github.com/Anclagen" }],
 };
 
-const Opportunities = () => {
+const Listings = () => {
   return (
     <>
       <div className="hidden bg-teal-900 bg-gray-900 bg-sky-900 bg-indigo-900 bg-red-900 bg-blue-900 bg-green-900 bg-sky-400 text-teal-900 text-gray-900 text-sky-900 text-indigo-900 text-red-900 text-blue-900 text-green-900 text-sky-400"></div>
       <main>
-        <BannerHome title="Opportunities" slogan="Turn Passion into Profession." imgSrc="images/banners/pexels-pixabay-162553.jpg" imgAlt="Descriptive Image Alt Text" links={[]} />
+        <BannerHalf title="Listings" slogan="Find that perfect fit." imgSrc="/images/banners/pexels-pixabay-162553.jpg" imgAlt="Descriptive Image Alt Text" />
 
         <Section bgColor="bg-zinc-200">
           <h2 className="text-3xl text-center mb-10 font-semibold">Our Listings</h2>
@@ -52,4 +52,4 @@ const Opportunities = () => {
   );
 };
 
-export default Opportunities;
+export default Listings;

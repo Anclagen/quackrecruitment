@@ -10,32 +10,39 @@ const Footer = () => {
       <div className="container mx-auto max-w-screen-2xl">
         <div>
           <div className="flex flex-wrap justify-center gap-10 mb-5">
-            <img src="/footer/ICO_Logo_WhiteOnBlue.jpg" alt="Information Commissioner's Office || https://ico.org.uk/" className="h-24" />
             <img src="/footer/disability-confident-committed.jpg" alt="Disability Committed Logo" className="h-24" />
             <img src="/footer/ALP.jpg" alt="ALP member logo || https://www.labourproviders.org.uk/" className="h-24" />
             <img src="/footer/Sedex-Logo.png" alt="Sedex logo || https://www.sedex.com/" className="h-24" />
-            <img src="footer/fsb-member-logo.jpg" alt="FSB member logo || https://www.fsb.org.uk/" className="h-24" />
           </div>
           {/* <p className="text-center mb-6">(Logos: Stronger Together / Crown Commercial Supplier)</p> */}
         </div>
         {/* Top Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-10 border-t border-violet-300 pt-6">
           {/* Logo and Description */}
-          <div className="text-center col-span-full lg:col-span-1">
-            <img src="/logos/temp-logo-white.png" alt="Company Logo" className="mb-2 w-22 mx-auto" />
-          </div>
-
-          {/* Useful Links */}
-          <div className="px-2">
-            <h3 className="mb-3 text-xl font-bold max-w-fit">Useful Links</h3>
+          <div className="px-2 md:ps-6">
+            <h3 className="mb-3 text-xl font-bold">About Us</h3>
             <ul>
               {[
                 { path: "/", label: "Home" },
-                { path: "/opportunities", label: "Opportunities" },
-                { path: "/training", label: "Training" },
                 { path: "/about", label: "About" },
-                { path: "/legal", label: "Legal" },
                 { path: "/contact", label: "Contact" },
+                { path: "/legal", label: "Legal" },
+                { path: "/legal/privacy-policy", label: "Privacy Policy" },
+              ].map((route) => (
+                <li key={route.path}>
+                  <Link href={`${route.path}`} className={`${location === route.path ? "underline" : ""} hover:underline hover:text-white text-white text-lg`}>
+                    {route.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="px-2">
+            <h3 className="mb-3 text-xl font-bold max-w-fit">Job Seekers</h3>
+            <ul>
+              {[
+                { path: "/recruitment", label: "Recruitment" },
+                { path: "/recruitment/listings", label: "Listings" },
               ].map((route) => (
                 <li key={route.path}>
                   <Link href={route.path} className={`${location === route.path ? "underline" : ""} hover:underline hover:text-white text-white text-lg`}>
@@ -46,19 +53,10 @@ const Footer = () => {
             </ul>
           </div>
           <div className="px-2">
-            <h3 className="mb-3 text-xl font-bold">Services</h3>
-            <ul>
-              {[{ path: "/#", label: "Assisted Advertising" }].map((route) => (
-                <li key={route.path}>
-                  <Link href={`sector${route.path}`} className={`${location === route.path ? "underline" : ""} hover:underline hover:text-white text-white text-lg`}>
-                    {route.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <h3 className="mt-4 mb-3 text-xl font-bold">Courses</h3>
+            <h3 className="mb-3 text-xl font-bold max-w-fit">Training & Courses</h3>
             <ul>
               {[
+                { path: "/training", label: "Training" },
                 { path: "/#", label: "Assisted Advertising" },
                 { path: "/#", label: "Warehouse & Logistics" },
                 { path: "/#", label: "Admin & Customer Service" },
@@ -72,7 +70,6 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-
           {/* Business Hours */}
           <div className="px-2">
             <h3 className="mb-3 text-xl font-bold">Office Hours</h3>
@@ -91,7 +88,25 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
+        {/* Quack group and affiliated */}
+        <div className="border-t border-violet-300 pt-6">
+          {/* Copyright */}
+          <div className="flex flex-col mb-8">
+            <img src="/logos/quack-group-horizonal-full-logo-white.png" alt="Quack Group Full Logo" className="my-3 w-full sm:w-80 md:w-96 mx-auto" />
+            <div className="flex flex-row justify-center max-w-screen-lg mx-auto gap-12 mt-8">
+              <Link href="/" className="flex flex-row">
+                <img src="/logos/temp-logo-white.png" alt="Logo" className="h-16" />
+                <div className="flex flex-col ml-3 text-white text-xl font-medium">
+                  <span>Quack</span>
+                  <span>Recruitment & Training</span>
+                </div>
+              </Link>
+              <a target="_blank" href="https://www.quackspecialists.co.uk" className="flex flex-row">
+                <img src="/logos/qs-logo-transparent.png" alt="QS Logo" className="h-16 sm:ps-10" />
+              </a>
+            </div>
+          </div>
+        </div>
         {/* Bottom Section */}
         <div className="border-t border-violet-300 pt-6">
           {/* Copyright */}
