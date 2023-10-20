@@ -13,7 +13,7 @@ const BannerHome = ({ title, slogan, imgSrc, imgAlt, links = [] }) => {
           <div className="text-center pt-20 mx-auto md:mx-0">
             <h1 className="text-black text-5xl md:text-6xl mb-4 max-w-sm mx-auto">{title}</h1>
             <p className="text-black text-2xl md:text-3xl mb-8 max-w-md mx-auto">{slogan}</p>
-            <div className="flex justify-center gap-5 flex-col place-content-center item-center justify-center">
+            <div className="flex justify-center gap-5 flex-col sm:flex-row">
               {/* Render links if provided */}
               {links &&
                 links.map((link, index) => (
