@@ -55,7 +55,7 @@ export const allAddressSchema = Yup.object().shape({
 
 // Job Preferences & Eligibility
 export const workEligibilitySchema = Yup.object().shape({
-  "salary-type": Yup.string().required("Salary type is required.").oneOf(["Salary", "Hourly"], "Select either Salary or Hourly"),
+  "salary-type": Yup.string().required("Salary type is required.").oneOf(["Annual", "Hourly"], "Select either Annual or Hourly"),
   "salary-value": Yup.number()
     .required("Salary value is required.")
     .positive("Salary value must be positive.")
