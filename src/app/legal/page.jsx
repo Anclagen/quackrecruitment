@@ -1,8 +1,6 @@
 import BannerHome from "../../components/Banner/BannerHome";
 import Section from "../../components/Sections/Section";
-import CardSection from "../../components/Sections/CardSection/CardSection";
-import { ProfileCard } from "../../components/Card/Card";
-import FourImageStretch from "../../components/Sections/FourImageFeature/FourImageStretch";
+import Link from "next/link";
 import FadeInFreeTextSection from "@/components/Sections/FadeInFreeFormatSection/FadeInFreeFormateSection";
 
 export const metadata = {
@@ -29,6 +27,13 @@ const Legal = () => {
             <li>{"Employers' Liability = £10m"}</li>
             <li>Professional Indemnity = £10m </li>
           </ul>
+          <Link
+            rel="noopener noreferrer"
+            href="/legal/privacy-policy"
+            className={`mt-6 py-4 px-6 focus:ring-violet-500 focus:ring-offset-violet-200 text-white transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg mx-auto bg-violet-900 hover:bg-violet-600 hover:text-white text-white py-2 px-5 font-semibold rounded w-fit flex`}
+          >
+            Privacy Policy
+          </Link>
         </FadeInFreeTextSection>
       </Section>
     </>
