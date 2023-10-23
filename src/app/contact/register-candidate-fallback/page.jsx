@@ -38,7 +38,7 @@ Please attach the following documents before sending your registration details:
               <p> Please use the mail to link below to open you mail client and send the candidate registration email.</p>
               <a
                 className="text-violet-950 hover:text-violet-600 font-semibold mt-1 text-xl"
-                href="mailto:sales@quackspecialists.co.uk?subject=Candidate%20Registration&amp;body=Please%20attach%20the%20following%20documents%20before%20sending%20your%20registration%20details:%0A
+                href="mailto:hello@quackrecruitment.co.uk?subject=Candidate%20Registration&amp;body=Please%20attach%20the%20following%20documents%20before%20sending%20your%20registration%20details:%0A
   - Proof%20of%20address*%0A
   - ID*%20(some%20examples%20passport,%20full%20birth%20certificate,%20and%20BRP%20cards)%0A
   - National%20insurance%20Number*%20(NI%20Card,%20P45,%20P60,%20HMRC%20Letter,%20Payslip%20with%20NI%20Number%20on)%0A
@@ -82,8 +82,8 @@ Please attach the following documents before sending your registration details:
               <ul className="list-disc ml-6 mt-2">
                 <li>
                   Alternatively, you can copy the contents below, fill it out and manually send it to us at{" "}
-                  <a href="mailto:sales@quackspecialists.co.uk" className="underline">
-                    sales@quackspecialists.co.uk
+                  <a href="mailto:hello@quackrecruitment.co.uk" className="underline">
+                    hello@quackrecruitment.co.uk
                   </a>
                 </li>
               </ul>
