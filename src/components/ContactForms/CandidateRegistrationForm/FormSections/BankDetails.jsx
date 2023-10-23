@@ -17,6 +17,13 @@ const BankDetails = () => (
     <div>
       <FormikField label="Bank Branch*" type="text" id="bank-branch" placeholder="Example Bank" />
     </div>
+    <h3 className="font-semibold text-lg text-center mb-3 mt-3">Emergency Contact</h3>
+    <div>
+      <FormikField label="Name*" type="text" id="emergency-name" placeholder="Jane Smith" />
+    </div>
+    <div>
+      <FormikField label="Phone Number*" type="tel" id="emergency-phone-number" placeholder="+1234567890" />
+    </div>
   </div>
 );
 

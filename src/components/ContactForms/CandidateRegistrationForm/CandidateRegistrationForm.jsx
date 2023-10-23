@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
-import { AvailabilityAndKin, ContactInformation, PersonalDetails, BankDetails, ReferenceDetails, AdditionalInformation, DocumentUpload } from "./FormSections";
-import { personalSchema, allAddressSchema, availabilitySchema, bankDetailsSchema, referenceDetailsSchema, additionalInformationSchema } from "./constactSchema";
+import { ContactInformation, PersonalDetails, BankDetails, DocumentUpload, Checklist, WorkAndDisabilities } from "./FormSections";
+import { empty, personalSchema, allAddressSchema, workEligibilitySchema, bankDetailsSchema } from "./constactSchema";
 import { initialState, uploadInitialState } from "./contactData";
 import { Form, Formik, Field } from "formik";
 import ErrorBoundary from "../ErrorBoundary";
@@ -17,13 +17,15 @@ const CandidateRegistrationForm = () => {
   const [formErrors, setFormErrors] = useState(null);
   const [agree, setAgree] = useState(false);
   const [success, setSuccess] = useState(false);
-  const Schema = [personalSchema, allAddressSchema, availabilitySchema, bankDetailsSchema, referenceDetailsSchema, additionalInformationSchema];
+  const Schema = [empty, personalSchema, allAddressSchema, workEligibilitySchema, bankDetailsSchema];
 
   useEffect(() => {
     const section = document.querySelector(`.section-${activeSection}`);
-    const input = section.querySelector("input, select");
-    if (input) {
-      input.focus();
+    if (section) {
+      const input = section.querySelector("input, select");
+      if (input) {
+        input.focus();
+      }
     }
   }, [activeSection]);
 
@@ -45,23 +47,30 @@ const CandidateRegistrationForm = () => {
         formData.append(key, values[key]);
       }
 
-      formData.append("proof-of-address", fileUploads["proof-of-address"]);
-      formData.append("proof-passport", fileUploads["proof-passport"]);
-      formData.append("proof-birth-certificate", fileUploads["proof-birth-certificate"]);
-
-      formData.append("proof-ni-number", fileUploads["proof-ni-number"]);
-      formData.append("proof-share-code", fileUploads["proof-share-code"]);
-      formData.append("proof-indefinite-leave", fileUploads["proof-indefinite-leave"]);
-
-      if (fileUploads["proof-student-term-time"]) {
-        formData.append("proof-student-term-time", fileUploads["proof-student-term-time"]);
+      for (const key in fileUploads) {
+        if (fileUploads[key]) {
+          formData.append(key, fileUploads[key]);
+        }
       }
 
-      if (fileUploads["proof-visa"]) {
-        formData.append("proof-visa", fileUploads["proof-visa"]);
-      }
+      // formData.append("proof-of-address", fileUploads["proof-of-address"]);
+      // formData.append("proof-passport", fileUploads["proof-passport"]);
+      // formData.append("proof-birth-certificate", fileUploads["proof-birth-certificate"]);
 
-      const response = await fetch("", {
+      // formData.append("proof-ni-number", fileUploads["proof-ni-number"]);
+      // formData.append("proof-share-code", fileUploads["proof-share-code"]);
+      // formData.append("proof-indefinite-leave", fileUploads["proof-indefinite-leave"]);
+
+      // if (fileUploads["proof-student-term-time"]) {
+      //   formData.append("proof-student-term-time", fileUploads["proof-student-term-time"]);
+      // }
+
+      // if (fileUploads["proof-visa"]) {
+      //   formData.append("proof-visa", fileUploads["proof-visa"]);
+      // }
+
+      // cf7 dev=16
+      const response = await fetch("https://content.quackspecialists.co.uk/wp-json/contact-form-7/v1/contact-forms/16/feedback", {
         method: "POST",
         body: formData,
       });
@@ -83,13 +92,12 @@ const CandidateRegistrationForm = () => {
   };
 
   const sectionFields = {
-    0: ["title", "first-name", "last-name", "date-of-birth", "phone-number", "gender", "email", "ni-number", "share-code"],
-    1: ["address-1", "address-2", "address-3", "city", "postcode"],
-    2: ["shifts", "days", "available-from", "emergency-name", "emergency-relationship", "emergency-phone-number"],
-    3: ["sort-code", "account-number", "account-holder-name", "bank-branch"],
-    4: ["ref-company-name", "ref-employed-from", "ref-employed-to", "ref-reason-leaving", "ref-name", "ref-phone-number", "ref-email"],
-    5: ["disabilities", "disabilities-info", "medication", "medication-info", "reasonable-adjustments", "reasonable-adjustments-info", "no-convictions"],
-    6: [],
+    0: [],
+    1: ["title", "first-name", "middle-name", "last-name", "date-of-birth", "mobile-number", "landline-number", "gender", "email", "ethnicity"],
+    2: ["address-1", "address-2", "address-3", "city", "postcode", "yearsAtAddress", "previous-address-1", "previous-address-2", "previous-address-3", "previous-city", "previous-postcode"],
+    3: ["salary-type", "salary-value", "specific-role", "specific-role-info", "transport", "disabilities", "disabilities-info", "ni-number", "share-code"],
+    4: ["sort-code", "account-number", "account-holder-name", "bank-branch", "emergency-name", "emergency-phone-number"],
+    5: [],
   };
 
   if (success) {
@@ -109,44 +117,38 @@ const CandidateRegistrationForm = () => {
   return (
     <ErrorBoundary>
       <Formik initialValues={initialState} validationSchema={Schema[activeSection]} onSubmit={handleSubmit}>
-        {({ isValid, validateForm, setTouched, isSubmitting }) => (
+        {({ isValid, validateForm, setTouched, isSubmitting, setFieldValue, values }) => (
           <Form className="p-5 bg-zinc-300 text-black w-full max-w-lg rounded-xl shadow-xl transition-all duration-300 shadow-violet-300">
             <div>
               <div className="">
                 <div className="">
                   <div className="section-0" style={{ display: activeSection === 0 ? "block" : "none" }}>
-                    <h2 className="text-xl text-center">Personal & Contact Info</h2>
-                    <Stepper activeSection={activeSection} steps={7} />
-                    <PersonalDetails />
+                    <h2 className="text-xl text-center">Before Starting</h2>
+                    <Checklist />
                   </div>
                   <div className="section-1" style={{ display: activeSection === 1 ? "block" : "none" }}>
-                    <h2 className="text-xl text-center">Contact Information</h2>
-                    <Stepper activeSection={activeSection} steps={7} />
-                    <ContactInformation />
+                    <h2 className="text-xl text-center">Personal Details</h2>
+                    <Stepper activeSection={activeSection - 1} steps={5} />
+                    <PersonalDetails />
                   </div>
                   <div className="section-2" style={{ display: activeSection === 2 ? "block" : "none" }}>
-                    <h2 className="text-xl text-center">Availability & Emergency Contact</h2>
-                    <Stepper activeSection={activeSection} steps={7} />
-                    <AvailabilityAndKin />
+                    <h2 className="text-xl text-center">Contact Information</h2>
+                    <Stepper activeSection={activeSection - 1} steps={5} />
+                    <ContactInformation values={values} setFieldValue={setFieldValue} />
                   </div>
                   <div className="section-3" style={{ display: activeSection === 3 ? "block" : "none" }}>
-                    <h2 className="text-xl text-center">Bank Details</h2>
-                    <Stepper activeSection={activeSection} steps={7} />
-                    <BankDetails />
+                    <h2 className="text-xl text-center">Job Preferences & Work Eligibility</h2>
+                    <Stepper activeSection={activeSection - 1} steps={5} />
+                    <WorkAndDisabilities />
                   </div>
                   <div className="section-4" style={{ display: activeSection === 4 ? "block" : "none" }}>
-                    <h2 className="text-xl text-center">Reference Details</h2>
-                    <Stepper activeSection={activeSection} steps={7} />
-                    <ReferenceDetails />
+                    <h2 className="text-xl text-center">Bank Details</h2>
+                    <Stepper activeSection={activeSection - 1} steps={5} />
+                    <BankDetails />
                   </div>
                   <div className="section-5" style={{ display: activeSection === 5 ? "block" : "none" }}>
-                    <h2 className="text-xl text-center">Additional Information</h2>
-                    <Stepper activeSection={activeSection} steps={7} />
-                    <AdditionalInformation />
-                  </div>
-                  <div className="section-6" style={{ display: activeSection === 6 ? "block" : "none" }}>
                     <h2 className="text-xl text-center">Document Upload</h2>
-                    <Stepper activeSection={activeSection} steps={7} />
+                    <Stepper activeSection={activeSection - 1} steps={5} />
                     <DocumentUpload fileUploads={fileUploads} setFileUploads={setFileUploads} setUploadError={setUploadError} />
                   </div>
                   <div className="flex mt-8">
@@ -160,25 +162,31 @@ const CandidateRegistrationForm = () => {
                     <button
                       type="button"
                       onClick={async () => {
-                        const currentSectionFields = sectionFields[activeSection];
-                        const touchedFields = {};
-                        currentSectionFields.forEach((key) => {
-                          touchedFields[key] = true;
-                        });
-                        setTouched(touchedFields);
+                        console.log(activeSection);
+                        if (activeSection > 0) {
+                          const currentSectionFields = sectionFields[activeSection];
+                          const touchedFields = {};
 
-                        await validateForm();
-                        if (isValid || activeSection === 6) {
-                          setActiveSection((prev) => Math.min(6, prev + 1));
+                          currentSectionFields.forEach((key) => {
+                            touchedFields[key] = true;
+                          });
+                          setTouched(touchedFields);
+
+                          await validateForm();
+                          if (isValid || activeSection === 7) {
+                            setActiveSection((prev) => Math.min(5, prev + 1));
+                          }
+                        } else {
+                          setActiveSection((prev) => Math.min(5, prev + 1));
                         }
                       }}
-                      className={`${(activeSection === 6 && "hidden") || ""} ms-auto bg-violet-900 hover:bg-violet-600 hover:text-white text-white py-2 px-4 rounded `}
+                      className={`${(activeSection === 5 && "hidden") || ""} ms-auto bg-violet-900 hover:bg-violet-600 hover:text-white text-white py-2 px-4 rounded `}
                     >
                       Next
                     </button>
                   </div>
 
-                  {activeSection === 6 && (
+                  {activeSection === 5 && (
                     <div className="text-center mt-10 flex flex-col gap-6">
                       <label>
                         I herby confirm that the information I have provided is correct and I agree to the terms and conditions.*

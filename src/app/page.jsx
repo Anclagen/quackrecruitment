@@ -49,18 +49,10 @@ const Home = () => {
           >
             <p className="mt-4 text-lg leading-6">
               {
-                " Year after year, Quack Recruitment has soared to new heights, marking our journey with incredible growth. We've proudly partnered with an array of household names, and our most recent financial year saw the best final quarter in our history. This comprised managing over four hundred temporary workers for just one of our major clients in Burton on Trent, reflecting a weekly wage bill surpassing £140k."
+                "Quack Recruitment: A force in the recruitment landscape. We've soared, partnering with both household giants and cherished local businesses. In our recent highlight, we managed over 400 temps for one major client, showcasing our range and capability. Whether you're a small business with 5 staff or a large-scale operation needing 400+ temps, we tailor to your needs. Our affiliations span top industry bodies, from warehouse & logistics to food and production. Our promise? Delivering with integrity, every step of the way."
               }
             </p>
-            <p className="mt-4 text-lg leading-6">
-              While our association with renowned brands is a feather in our cap, we are equally proud to support smaller, family-run businesses. These enterprises value our flexibility, as we craft
-              recruitment models to fit their unique needs — from businesses with a mere 5 employees to extensive on-site managed services for 400+ temporary workers.
-            </p>
-            <p className="mt-4 text-lg leading-6">
-              {
-                "At Quack Recruitment, we understand that volume is just one aspect of our commitment. Compliance and trustworthiness remain paramount. Our clients take solace in the fact that we're affiliated with leading industry bodies across our sectors, spanning warehouse & logistics to food and production. Our promise? Delivering with integrity, every step of the way."
-              }
-            </p>
+            <p className="mt-4 text-lg leading-6 italic">Discover the Quack difference.</p>
             <div className="text-center my-10">
               <Link
                 className="py-4 px-6  bg-violet-900 hover:bg-violet-600 focus:ring-violet-500 focus:ring-offset-violet-200 text-white w-full transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
@@ -73,28 +65,25 @@ const Home = () => {
         </Section>
         <Section bgColor="bg-zinc-950 text-white">
           <FadeInFreeTextSection title="Our Comprehensive Recruitment Solutions" imageSrc="/images/interview-1.jpg" imageAlt="Description" dark={true}>
-            <h3 className="mt-4 text-xl font-semibold leading-6">Assisted Advertising</h3>
             <p className="mt-4 text-lg leading-6">
-              Quack Recruitment streamlines your job advertising across our platforms, widening your candidate reach. Tailor our services to either pre-screen candidates or receive a full candidate
-              list for your internal hiring process. Never overlook top talent again.
+              <b>Assisted Advertising:</b> Boost your reach with Quack! Streamlined job ads and tailored screening options ensure you never miss top talent.
             </p>
-            <h3 className="mt-4 text-xl font-semibold leading-6">Temporary Recruitment</h3>
             <p className="mt-4 text-lg leading-6">
-              Facing unexpected staffing needs? Quack Recruitment has you covered. From sudden departures to short-term projects, we alleviate the challenges of hiring temporary staff, ensuring you
-              have the right talent when needed.
+              <b>Temporary Recruitment:</b>
+              {" Got staffing emergencies? Quack's got you. Quick solutions for sudden needs, always the right talent."}
             </p>
-            <h3 className="mt-4 text-xl font-semibold leading-6">Permanent Recruitment</h3>
+
             <p className="mt-4 text-lg leading-6">
-              {
-                "Quack Recruitment simplifies your permanent hiring. For new roles or replacing crucial staff, we offer tailored solutions to find the perfect addition to your team. Share your requirements; we'll handle the rest."
-              }
+              <b>Permanent Recruitment:</b> Simplify your long-term hires. Whether new roles or replacements, share your needs and let Quack do the rest.
             </p>
-            <div className="text-center mt-10">
+
+            <p className="mt-8 text-lg leading-6 italic">Discover more about how Quack can empower your hiring process.</p>
+            <div className="text-center my-10">
               <Link
-                href="/services"
-                className="py-4 px-6  bg-violet-900 hover:bg-violet-600 focus:ring-violet-500 focus:ring-offset-violet-200 text-white w-full transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg  mx-5 mt-auto"
+                className="py-4 px-6  bg-violet-900 hover:bg-violet-600 focus:ring-violet-500 focus:ring-offset-violet-200 text-white w-full transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+                href="/about"
               >
-                Our Services
+                Recruitment
               </Link>
             </div>
           </FadeInFreeTextSection>
@@ -105,7 +94,7 @@ const Home = () => {
             titlePurple="Discover roles that resonate with your expertise."
             text="Let us guide you towards a career that aligns with your skills and passions."
             linkText="Register Today"
-            linkHref="/register-candidate"
+            linkHref="/contact/register-candidate"
             image="/images/tools.png"
             reverse={true}
           />

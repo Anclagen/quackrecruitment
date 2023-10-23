@@ -64,7 +64,11 @@ const Contact = () => {
             </div>
           </div>
         </Section>
-        <Section bgColor="bg-gray bg-opacity-10 text-center">
+        {/* <Section bgColor="bg-gray bg-opacity-10 text-center">
+          <h2 className="text-2xl font-bold leading-8 text-black sm:text-3xl sm:leading-9 text-center mb-10">Our Locations</h2>
+          <div></div>
+        </Section> */}
+        <Section bgColor="bg-zinc-950 text-center">
           <h2 className="text-2xl font-bold leading-8 text-black sm:text-3xl sm:leading-9 text-center mb-10">Serviced Locations & Offices</h2>
           <div
             className="relative max-w-screen-lg mx-auto"

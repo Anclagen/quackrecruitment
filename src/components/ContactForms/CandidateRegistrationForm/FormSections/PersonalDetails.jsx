@@ -3,20 +3,8 @@ import FormikField from "../../../Formik/FormikField";
 const PersonalDetails = () => (
   <div className="flex flex-col">
     <div className="sm:flex sm:flex-row gap-6 w-full">
-      {/* First Name */}
-      <div className="sm:w-1/2">
-        <FormikField label="First Name*" type="text" id="first-name" placeholder="John" />
-      </div>
-
-      {/* Last Name */}
-      <div className="sm:w-1/2">
-        <FormikField label="Last Name*" type="text" id="last-name" placeholder="Doe" />
-      </div>
-    </div>
-
-    <div className="sm:flex sm:flex-row gap-6 w-full">
-      {/* Title */}
       <div className="h-20 sm:w-1/2">
+        {/* Title */}
         <FormikField
           label="Title*"
           type="select"
@@ -34,7 +22,27 @@ const PersonalDetails = () => (
           ]}
         />
       </div>
+      {/* First Name */}
+      <div className="sm:w-1/2">
+        <FormikField label="First Name*" type="text" id="first-name" placeholder="John" />
+      </div>
+    </div>
+    <div className="sm:flex sm:flex-row gap-6 w-full">
+      {/* Middle Name */}
+      <div className="sm:w-1/2">
+        <FormikField label="Middle Name" type="text" id="middle-name" placeholder="Doe" />
+      </div>
+      {/* Last Name */}
+      <div className="sm:w-1/2">
+        <FormikField label="Last Name*" type="text" id="last-name" placeholder="Doe" />
+      </div>
+    </div>
 
+    <div className="sm:flex sm:flex-row gap-6 w-full">
+      {/* Date of Birth */}
+      <div className="h-20 sm:w-1/2">
+        <FormikField label="Date of Birth*" type="date" id="date-of-birth" width="w-content" />
+      </div>
       {/* Gender */}
       <div className="h-20 sm:w-1/2">
         <FormikField
@@ -53,34 +61,24 @@ const PersonalDetails = () => (
         />
       </div>
     </div>
-
+    <div>
+      {/* Email */}
+      <FormikField label="Ethnicity*" type="text" id="ethnicity" placeholder="British" />
+    </div>
     <div className="sm:flex sm:flex-row gap-6 w-full">
-      {/* Date of Birth */}
-      <div className="h-20 sm:w-1/2">
-        <FormikField label="Date of Birth*" type="date" id="date-of-birth" width="w-content" />
-      </div>
-
       {/* Phone Number */}
       <div className="h-20 sm:w-1/2">
-        <FormikField label="Phone Number*" type="tel" id="phone-number" placeholder="1234567890" />
+        <FormikField label="Mobile Number*" type="tel" id="mobile-number" placeholder="1234567890" />
+      </div>
+
+      <div className="h-20 sm:w-1/2">
+        <FormikField label="Landline Number" type="tel" id="landline-number" placeholder="1234567890" />
       </div>
     </div>
 
     <div>
       {/* Email */}
       <FormikField label="Email*" type="email" id="email" placeholder="your-email@example.com" />
-    </div>
-
-    <div className="sm:flex sm:flex-row gap-6 w-full">
-      {/* NI number */}
-      <div className="h-20 sm:w-1/2">
-        <FormikField label="National Insurance*" type="text" id="ni-number" placeholder="QQ123456C" />
-      </div>
-
-      {/* Share Code */}
-      <div className="h-20 sm:w-1/2">
-        <FormikField label="Share Code*" type="text" id="share-code" placeholder="123456789" />
-      </div>
     </div>
   </div>
 );

@@ -1,7 +1,7 @@
 import { Field, useField } from "formik";
 import FormikField from "./FormikField"; // Assuming FormikField is in the same directory
 
-function FormikYesNoDetails({ name, question, detailsLabel }) {
+function FormikYesNoDetails({ name, question, detailsLabel, placeholder = "" }) {
   const [field] = useField(name);
 
   return (
@@ -23,7 +23,7 @@ function FormikYesNoDetails({ name, question, detailsLabel }) {
       </div>
       {field.value === "yes" && detailsLabel && (
         <div className="mt-1">
-          <FormikField label={detailsLabel} type="text" id={`${name}-info`} />
+          <FormikField label={detailsLabel} type="text" id={`${name}-info`} placeholder={placeholder} />
         </div>
       )}
     </>
