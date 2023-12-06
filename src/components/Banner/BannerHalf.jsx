@@ -1,6 +1,6 @@
 const BannerHalf = ({ title, slogan, imgSrc, imgAlt }) => {
   return (
-    <div className="relative banner overflow-hidden" style={{ height: "50vh" }}>
+    <div className="relative banner overflow-hidden" style={{ height: "35vh", minHeight: "400px" }}>
       {/* Image */}
       <img src={imgSrc} alt={imgAlt} className="absolute top-0 left-0 w-full h-full object-cover" />
 

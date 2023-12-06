@@ -81,7 +81,7 @@ const Home = () => {
             <div className="text-center my-10">
               <Link
                 className="py-4 px-6  bg-violet-900 hover:bg-violet-600 focus:ring-violet-500 focus:ring-offset-violet-200 text-white w-full transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
-                href="/about"
+                href="/recruitment"
               >
                 Recruitment
               </Link>

@@ -166,12 +166,10 @@ const CandidateRegistrationForm = () => {
                         if (activeSection > 0) {
                           const currentSectionFields = sectionFields[activeSection];
                           const touchedFields = {};
-
                           currentSectionFields.forEach((key) => {
                             touchedFields[key] = true;
                           });
                           setTouched(touchedFields);
-
                           await validateForm();
                           if (isValid || activeSection === 7) {
                             setActiveSection((prev) => Math.min(5, prev + 1));
@@ -185,7 +183,6 @@ const CandidateRegistrationForm = () => {
                       Next
                     </button>
                   </div>
-
                   {activeSection === 5 && (
                     <div className="text-center mt-10 flex flex-col gap-6">
                       <label>
