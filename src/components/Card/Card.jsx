@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 
 export const CardWithTitleTop = ({ title, imgSrc, imgAlt, text }) => {
@@ -111,6 +112,66 @@ export const ProfileCard = ({ userImage, userName, userPosition, userDescription
                 <span className="ml-2">Check Me Out On Facebook</span>
               </a>
             )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const CourseCard = ({ title, description, points = [], price, locations = [], enrollmentMessage, image, link = "" }) => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Trigger the fade in animation once
+    rootMargin: "-80px 0px", // Start the animation slightly before the element is in view
+  });
+  return (
+    <div class={`relative max-w-lg px-4 mx-auto sm:px-6 lg:px-8 ${inView ? "" : "opacity-0 mt-20"}`} ref={ref}>
+      <div class="max-w-lg mx-auto overflow-hidden rounded-lg shadow-lg pricing-box lg:max-w-none mb-10">
+        <div class="px-6 py-8 bg-violet-50 lg:p-12">
+          <h3 class="text-2xl font-extrabold leading-8 text-gray-900 sm:text-3xl sm:leading-9">{title}</h3>
+          <p class="mt-6 text-base leading-6 text-gray-700 ">{description}</p>
+          <div class="mt-8">
+            <div class="flex items-center">
+              <h4 class="flex-shrink-0 pr-4 text-sm font-semibold leading-5 tracking-wider text-violet-800 uppercase">What&#x27;s covered</h4>
+              <div class="flex-1 border-t-2 border-gray-200"></div>
+            </div>
+            <ul class="mt-6 ms-6">
+              {points.map(({ title, description }, index) => (
+                <li class="text-violet-800 font-bold list-disc" key={index}>
+                  {title}: <span className="text-black font-normal">{description}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div class="mt-8">
+            <div class="flex items-center">
+              <h4 class="flex-shrink-0 pr-4 text-sm font-semibold leading-5 tracking-wider text-violet-800 uppercase">Locations</h4>
+              <div class="flex-1 border-t-2 border-gray-200"></div>
+            </div>
+            <ul class="mt-6 ms-6">
+              {locations.map((location, index) => (
+                <li class="text-violet-800 font-bold list-disc" key={index}>
+                  {location}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div class="px-6 py-8 text-center bg-gray-50 lg:p-12 bg-violet-200">
+          <p className=" mb-6">
+            <span class="text-base font-medium leading-6 text-gray-700">Starting from </span>
+            <span class="text-lg font-semibold leading-none text-gray-900">${price}</span>
+          </p>
+          <p class="text-md font-semibold leading-6 text-gray-900">{enrollmentMessage}</p>
+          <div class="mt-6">
+            <div class="rounded-md shadow">
+              <Link
+                href={link}
+                class="py-2 px-4 block bg-violet-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
+              >
+                Learn More
+              </Link>
+            </div>
           </div>
         </div>
       </div>
