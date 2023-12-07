@@ -20,10 +20,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-10 border-t border-violet-300 pt-6">
           {/* Logo and Description */}
           <div className="px-2 md:ps-6">
-            <h3 className="mb-3 text-xl font-bold">About Us</h3>
+            <h3 className="mb-3 text-xl font-bold">General</h3>
             <ul>
               {[
                 { path: "/", label: "Home" },
+                { path: "/recruitment/listings", label: "Jobs" },
                 { path: "/about", label: "About" },
                 { path: "/contact", label: "Contact" },
                 { path: "/legal", label: "Legal" },
@@ -41,8 +42,11 @@ const Footer = () => {
             <h3 className="mb-3 text-xl font-bold max-w-fit">Job Seekers</h3>
             <ul>
               {[
-                { path: "/recruitment", label: "Recruitment" },
                 { path: "/recruitment/listings", label: "Listings" },
+                { path: "/recruitment", label: "Recruitment" },
+                { path: "/recruitment/permanent", label: "Permanent Recruitment" },
+                { path: "/recruitment/temporary", label: "Temporary Recruitment" },
+                { path: "/recruitment/on-site-managed", label: "On-Site Managed Services" },
               ].map((route) => (
                 <li key={route.path}>
                   <Link href={route.path} className={`${location === route.path ? "underline" : ""} hover:underline hover:text-white text-white text-lg`}>
@@ -57,10 +61,10 @@ const Footer = () => {
             <ul>
               {[
                 { path: "/training", label: "Training" },
-                { path: "/#", label: "Assisted Advertising" },
-                { path: "/#", label: "Warehouse & Logistics" },
-                { path: "/#", label: "Admin & Customer Service" },
-                { path: "/#", label: "CSCS and SIA Security" },
+                { path: "/training/food-and-hygiene", label: "Food & Hygiene" },
+                { path: "/training/sia", label: "Security Industry Authority (SIA)" },
+                { path: "/training/customer-service-administration", label: "Admin & Customer Service" },
+                { path: "/training/cscs", label: "Construction Skills (CSCS)" },
               ].map((route) => (
                 <li key={route.path}>
                   <Link href={`sector${route.path}`} className={`${location === route.path ? "underline" : ""} hover:underline hover:text-white text-white text-lg`}>

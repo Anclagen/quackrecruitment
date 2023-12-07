@@ -38,9 +38,6 @@ const PermanentRecruitment = () => {
           </div>
         </Section>
         <Section bgColor="bg-gray-50">
-          <RecruitmentQuery />
-        </Section>
-        <Section bgColor="bg-zinc-200">
           <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Permanent Recruitment FAQ</h2>
           <div className="mx-auto max-w-screen-md">
             <ExpandableSection title="How does the permanent recruitment process work?">
@@ -78,6 +75,9 @@ const PermanentRecruitment = () => {
               </p>
             </ExpandableSection>
           </div>
+        </Section>
+        <Section bgColor="bg-zinc-200">
+          <RecruitmentQuery />
         </Section>
       </main>
     </>

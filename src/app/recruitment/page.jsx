@@ -18,18 +18,8 @@ const Recruitment = () => {
       <div className="hidden bg-teal-900 bg-gray-900 bg-sky-900 bg-indigo-900 bg-red-900 bg-blue-900 bg-green-900 bg-sky-400 text-teal-900 text-gray-900 text-sky-900 text-indigo-900 text-red-900 text-blue-900 text-green-900 text-sky-400"></div>
       <main>
         <BannerHalf title="Recruitment" slogan="Turn Passion into Profession." imgSrc="images/banners/pexels-pixabay-162553.jpg" imgAlt="Descriptive Image Alt Text" links={[]} />
-        <Section bgColor="bg-zinc-200">
-          <CTASection
-            titleBlack="Looking for a job?"
-            titlePurple="Check out whats on offer."
-            text="At Quack Recruitment & Training, we've curated job listings from across the UK to align with your passions and skills. Dive in and find that perfect role to elevate your career."
-            linkText="Jobs"
-            linkHref="/recruitment/listings"
-            image="/images/hardhat.png"
-          />
-        </Section>
-        <Section bgColor="bg-zinc-950 text-white">
-          <FadeInFreeTextSection title="Our Comprehensive Recruitment Solutions" imageSrc="/images/interview-1.jpg" imageAlt="Description" dark={true}>
+        <Section bgColor="bg-zinc-200 text-white">
+          <FadeInFreeTextSection title="Our Comprehensive Recruitment Solutions" imageSrc="/images/interview-1.jpg" imageAlt="Description">
             <h3 className="mt-4 text-xl font-semibold leading-6">Assisted Advertising</h3>
             <p className="mt-4 text-lg leading-6">
               Quack Recruitment streamlines your job advertising across our platforms, widening your candidate reach. Tailor our services to either pre-screen candidates or receive a full candidate
