@@ -58,8 +58,8 @@ const TemporaryRecruitment = () => {
 
             <ExpandableSection title="How does this service benefit my company?">
               <p>
-                This service streamlines your recruitment process, reduces hiring times, and ensures a consistent supply of high-quality candidates. It's like having an expert recruitment department
-                embedded within your company, dedicated solely to your staffing needs.
+                {`This service streamlines your recruitment process, reduces hiring times, and ensures a consistent supply of high-quality candidates. It's like having an expert recruitment department
+                embedded within your company, dedicated solely to your staffing needs.`}
               </p>
             </ExpandableSection>
 

@@ -73,8 +73,8 @@ const PermanentRecruitment = () => {
 
             <ExpandableSection title="What if the candidate doesn't work out?">
               <p>
-                We stand by the quality of our placements. In case a candidate doesn't work out, we offer a replacement guarantee, subject to our terms and conditions. This ensures peace of mind and
-                confidence in your hiring decisions.
+                {` We stand by the quality of our placements. In case a candidate doesn't work out, we offer a replacement guarantee, subject to our terms and conditions. This ensures peace of mind and
+                confidence in your hiring decisions.`}
               </p>
             </ExpandableSection>
           </div>
