@@ -2,7 +2,7 @@ import Section from "@/components/Sections/Section";
 import ExpandableSection from "@/components/ExpandableSection/ExpandableSection";
 
 export const metadata = {
-  title: "Privacy Policy | Quack Recruitment",
+  title: "Privacy Policy | Quack Recruitment & Training",
   description: "Need to get in touch with us?",
   keywords: ["Quack Group", "Quack Recruitment", "Jobs", "Training", "Recruiters", "Recruitment"],
   authors: [{ name: "Alexander Barrett", url: "https://github.com/Anclagen" }],

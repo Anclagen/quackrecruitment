@@ -2,7 +2,7 @@ import Section from "@/components/Sections/Section";
 import CandidateRegistrationForm from "@/components/ContactForms/CandidateRegistrationForm/CandidateRegistrationForm";
 
 export const metadata = {
-  title: "Register Candidate | Quack Recruitment",
+  title: "Register Candidate | Quack Recruitment & Training",
   description: "Need to get in touch with us?",
   keywords: ["Quack Group", "Quack Recruitment", "Jobs", "Training", "Recruiters", "Recruitment"],
   authors: [{ name: "Alexander Barrett", url: "https://github.com/Anclagen" }],

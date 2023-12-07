@@ -3,7 +3,7 @@ import Section from "@/components/Sections/Section";
 import GeneralContactForm from "@/components/ContactForms/GeneralContactForm/GeneralContactForm";
 
 export const metadata = {
-  title: "Contact | Quack Recruitment",
+  title: "Contact | Quack Recruitment & Training",
   description: "Need to get in touch with us?",
   keywords: ["Quack Group", "Quack Recruitment", "Jobs", "Training", "Recruiters", "Recruitment"],
   authors: [{ name: "Alexander Barrett", url: "https://github.com/Anclagen" }],

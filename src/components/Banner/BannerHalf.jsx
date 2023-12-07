@@ -1,8 +1,9 @@
-const BannerHalf = ({ title, slogan, imgSrc, imgAlt }) => {
+const BannerHalf = ({ title, slogan, imgSrc, imgAlt, position = "bottom" }) => {
   return (
-    <div className="relative banner overflow-hidden" style={{ height: "35vh", minHeight: "400px" }}>
+    <div className="relative banner overflow-hidden" style={{ height: "40vh", minHeight: "400px" }}>
+      <div className="object-bottom object-top object-right object-left object-center"></div>
       {/* Image */}
-      <img src={imgSrc} alt={imgAlt} className="absolute top-0 left-0 w-full h-full object-cover" />
+      <img src={imgSrc} alt={imgAlt} className={`absolute top-0 left-0 w-full h-full object-cover object-${position}`} />
 
       {/* Overlay */}
       <div className="absolute top-0 left-0 w-full h-full px-5 md:px-12 banner-gradient">

@@ -2,7 +2,7 @@ import BannerHalf from "@/components/Banner/BannerHalf";
 import Section from "@/components/Sections/Section";
 
 export const metadata = {
-  title: "Listings | Quack Recruitment",
+  title: "Listings | Quack Recruitment & Training",
   description: "Check out our latest opportunities and find that dream job for you today!",
   keywords: ["Quack Group", "Quack Recruitment", "Jobs", "Training", "Recruiters", "Recruitment"],
   authors: [{ name: "Alexander Barrett", url: "https://github.com/Anclagen" }],

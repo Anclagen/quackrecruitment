@@ -6,7 +6,7 @@ import FourImageStretch from "../../components/Sections/FourImageFeature/FourIma
 import FadeInFreeTextSection from "@/components/Sections/FadeInFreeFormatSection/FadeInFreeFormateSection";
 
 export const metadata = {
-  title: "Services | Quack Recruitment",
+  title: "Services | Quack Recruitment & Training",
   description: "See what Quack Recruitment has to offer.",
   keywords: ["Quack Group", "Quack Recruitment", "Jobs", "Training", "Recruiters", "Recruitment"],
   authors: [{ name: "Alexander Barrett", url: "https://github.com/Anclagen" }],

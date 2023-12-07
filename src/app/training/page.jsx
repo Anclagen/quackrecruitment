@@ -3,6 +3,13 @@ import Section from "@/components/Sections/Section";
 import DetailsSection from "@/components/Sections/DetailsSection";
 import { CourseCard } from "@/components/Card/Card";
 
+export const metadata = {
+  title: "Training | Quack Recruitment & Training",
+  description: "Get the skills you need to succeed with Quack!",
+  keywords: ["Quack Group", "Quack Recruitment", "Jobs", "Training", "Recruiters", "Recruitment"],
+  authors: [{ name: "Alexander Barrett", url: "https://github.com/Anclagen" }],
+};
+
 function Training() {
   return (
     <>
@@ -46,14 +53,6 @@ function Training() {
 }
 
 export default Training;
-
-/* Expert Instructors: Learn from industry professionals with years of experience in their respective fields.
-
-Customized Training: Tailored courses to meet your specific needs, ensuring you gain practical, applicable skills.
-
-Industry-Recognized Certifications: Our courses provide certifications that are widely recognized, enhancing your employability.
-
-Flexible Learning: Convenient schedules and a variety of learning formats to accommodate your busy lifestyle. */
 
 const courses = [
   {

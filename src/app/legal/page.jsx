@@ -1,10 +1,10 @@
-import BannerHome from "../../components/Banner/BannerHome";
+import BannerHalf from "@/components/Banner/BannerHalf";
 import Section from "../../components/Sections/Section";
 import Link from "next/link";
 import FadeInFreeTextSection from "@/components/Sections/FadeInFreeFormatSection/FadeInFreeFormateSection";
 
 export const metadata = {
-  title: "Legal | Quack Recruitment",
+  title: "Legal | Quack Recruitment & Training",
   description: "Learn about Quack Recruitment, who we are and what we can do for you.",
   keywords: ["Quack Group", "Quack Recruitment", "Jobs", "Training", "Recruiters", "Recruitment"],
   authors: [{ name: "Alexander Barrett", url: "https://github.com/Anclagen" }],
@@ -13,7 +13,13 @@ export const metadata = {
 const Legal = () => {
   return (
     <>
-      <BannerHome title="Legal" slogan="A Dedicated & Experienced Team Of Experts" imgSrc="images/banners/pexels-yan-krukau-7691705.jpg" imgAlt="Group opf people looking at a computer" />
+      <BannerHalf
+        title="About"
+        slogan="A Dedicated & Experienced Team Of Experts"
+        imgSrc="images/banners/pexels-yan-krukau-7691705.jpg"
+        imgAlt="Group opf people looking at a computer"
+        position="top"
+      />
 
       <Section bgColor="bg-zinc-200">
         <FadeInFreeTextSection title="Legal Notice" imageSrc="/images/pexels-yan-krukau-8867482.jpg" imageAlt="Description" reverse={true}>
