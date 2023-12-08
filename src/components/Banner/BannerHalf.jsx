@@ -1,6 +1,6 @@
 const BannerHalf = ({ title, slogan, imgSrc, imgAlt, position = "bottom" }) => {
   return (
-    <div className="relative banner overflow-hidden" style={{ height: "40vh", minHeight: "400px" }}>
+    <div className="relative banner shadow-lg shadow-quackred-200 " style={{ height: "40vh", minHeight: "400px" }}>
       <div className="object-bottom object-top object-right object-left object-center"></div>
       {/* Image */}
       <img src={imgSrc} alt={imgAlt} className={`absolute top-0 left-0 w-full h-full object-cover object-${position}`} />
@@ -10,7 +10,7 @@ const BannerHalf = ({ title, slogan, imgSrc, imgAlt, position = "bottom" }) => {
         <div className="relative max-w-screen-2xl mx-auto top-0 left-0 h-full flex items-center ">
           <div className="text-center pt-20 mx-auto md:mx-0">
             <h1 className="text-black text-5xl md:text-6xl mb-4 max-w-sm mx-auto">{title}</h1>
-            <p className="text-black text-2xl md:text-3xl mb-8 max-w-md mx-auto">{slogan}</p>
+            <p className="text-quackred text-2xl md:text-3xl mb-8 max-w-md mx-auto">{slogan}</p>
           </div>
         </div>
       </div>

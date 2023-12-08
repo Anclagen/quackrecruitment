@@ -19,7 +19,7 @@ export const metadata = {
 const Home = () => {
   return (
     <>
-      <div className="hidden bg-teal-900 bg-gray-900 bg-sky-900 bg-indigo-900 bg-red-900 bg-blue-900 bg-green-900 bg-sky-400 text-teal-900 text-gray-900 text-sky-900 text-indigo-900 text-red-900 text-blue-900 text-green-900 text-sky-400"></div>
+      <div className="hidden bg-quackred-800 bg-quackred-700 bg-quackred-950 bg-quackred-900 bg-quackred-500 bg-quackred-600 bg-teal-900 bg-gray-900 bg-sky-900 bg-indigo-900 bg-red-900 bg-blue-900 bg-green-900 bg-sky-400 text-teal-900 text-gray-900 text-sky-900 text-indigo-900 text-red-900 text-blue-900 text-green-900 text-sky-400"></div>
       {/* <Head title="Home" description="Welcome to Quack Specialists, your local recruitment specialist." keywords={keywords} /> */}
       <Head>
         <title>Home</title>
@@ -33,11 +33,11 @@ const Home = () => {
           imgSrc="images/banners/pexels-sevenstorm-juhaszimrus-443383.jpg"
           imgAlt="Descriptive Image Alt Text"
           links={[
-            { label: "Recruitment", path: "/recruitment", color: "violet" },
-            { label: "Training", path: "/training", color: "violet" },
+            { label: "Recruitment", path: "/recruitment", color: "quackred" },
+            { label: "Training", path: "/training", color: "quackred" },
           ]}
         />
-        <Section bgColor="bg-zinc-200">
+        <Section bgColor="bg-zinc-50">
           <FourImageStretch
             title="Who Are We?"
             images={[
@@ -62,6 +62,16 @@ const Home = () => {
               </Link>
             </div>
           </FourImageStretch>
+        </Section>
+        <Section bgColor="bg-zinc-200">
+          <CTASection
+            titleBlack="Looking for a job?"
+            titlePurple="Check out whats on offer."
+            text="At Quack Recruitment & Training, we've curated job listings from across the UK to align with your passions and skills. Dive in and find that perfect role to elevate your career."
+            linkText="Jobs"
+            linkHref="/recruitment/listings"
+            image="/images/hardhat.png"
+          />
         </Section>
         <Section bgColor="bg-zinc-950 text-white">
           <FadeInFreeTextSection title="Our Comprehensive Recruitment Solutions" imageSrc="/images/interview-1.jpg" imageAlt="Description" dark={true}>
@@ -145,7 +155,7 @@ const Home = () => {
               text="Registered with leading industry affiliates, our credentials highlight our commitment to recruitment excellence."
             />
           </CardSection>
-          <div className="text-center mt-10">
+          {/* <div className="text-center mt-10">
             <Link
               href="/services"
               className="py-4 px-6  bg-violet-900 hover:bg-violet-600 focus:ring-violet-500 focus:ring-offset-violet-200 text-white w-full transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg  mx-5 mt-auto"
@@ -158,7 +168,7 @@ const Home = () => {
             >
               Opportunities
             </Link>
-          </div>
+          </div> */}
         </Section>
         <Section bgColor="bg-zinc-200">
           <FourImageStretch

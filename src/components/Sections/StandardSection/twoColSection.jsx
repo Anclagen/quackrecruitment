@@ -1,5 +1,6 @@
 "use client";
 import { Link } from "react-router-dom";
+import PageLink from "@/components/PageLink";
 
 const TwoColSection = ({ title, imageSrc, imageAlt, text = [], linkText, linkHref, reverse = false }) => {
   return (
@@ -16,13 +17,7 @@ const TwoColSection = ({ title, imageSrc, imageAlt, text = [], linkText, linkHre
                 {paragraph}
               </p>
             ))}
-          <div className="flex justify-center mt-auto">
-            {linkText && linkHref && (
-              <Link to={linkHref} className="bg-violet-900 hover:bg-violet-600 hover:text-white text-white py-2 px-4 rounded">
-                {linkText}
-              </Link>
-            )}
-          </div>
+          <div className="flex justify-center mt-auto">{linkText && linkHref && <PageLink href={linkHref} label={linkText} />}</div>
         </div>
       </div>
     </div>

@@ -99,7 +99,7 @@ const Footer = () => {
             <img src="/logos/quack-group-horizonal-full-logo-white.png" alt="Quack Group Full Logo" className="my-3 w-full sm:w-80 md:w-96 mx-auto" />
             <div className="flex flex-row justify-center max-w-screen-lg mx-auto gap-12 mt-8">
               <Link href="/" className="flex flex-row">
-                <img src="/logos/temp-logo-white.png" alt="Logo" className="h-16" />
+                <img src="/logos/temp-logo-rt.png" alt="Logo" className="h-16" />
                 <div className="flex flex-col ml-3 text-white text-xl font-medium">
                   <span>Quack</span>
                   <span>Recruitment & Training</span>
