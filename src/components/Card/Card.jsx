@@ -167,7 +167,7 @@ export const CourseCard = ({ title, description, points = [], price, locations =
             <div class="rounded-md shadow">
               <Link
                 href={link}
-                class="py-2 px-4 block bg-quackred-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
+                class="py-2 px-4 block bg-quackred-800 hover:bg-quackred-600 focus:ring-quackred-400 focus:ring-offset-quackred-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
               >
                 Learn More
               </Link>

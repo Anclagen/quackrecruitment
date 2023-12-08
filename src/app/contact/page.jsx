@@ -1,4 +1,4 @@
-import BannerHome from "@/components/Banner/BannerHome";
+import BannerHalf from "@/components/Banner/BannerHalf";
 import Section from "@/components/Sections/Section";
 import GeneralContactForm from "@/components/ContactForms/GeneralContactForm/GeneralContactForm";
 
@@ -14,10 +14,10 @@ const Contact = () => {
     <>
       <div className="hidden bg-teal-900 bg-gray-900 bg-sky-900 bg-indigo-900 bg-red-900 bg-blue-900 bg-green-900 bg-sky-400 text-teal-900 text-gray-900 text-sky-900 text-indigo-900 text-red-900 text-blue-900 text-green-900 text-sky-400"></div>
       <main>
-        <BannerHome title="Contact Us" slogan="Employer Or Job Seeker Were Here To Help" imgSrc="/images/banners/pexels-yan-krukau-8867434.jpg" imgAlt="Descriptive Image Alt Text" links={[]} />
-        <Section bgColor="bg-zinc-950">
+        <BannerHalf title="Contact Us" slogan="Employer Or Job Seeker Were Here To Help" imgSrc="/images/banners/pexels-yan-krukau-8867434.jpg" imgAlt="Descriptive Image Alt Text" position="top" />
+        <Section bgColor="bg-zinc-200">
           <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0">
-            <div className="px-6 rounded-lg text-white flex-none md:w-1/2">
+            <div className="px-6 rounded-lg flex-none md:w-1/2">
               <h2 className="text-2xl font-bold leading-8 sm:text-3xl sm:leading-9 mb-6">Contact Details</h2>
               <p className="mb-5">
                 {
@@ -27,7 +27,7 @@ const Contact = () => {
               <div className="mb-5">
                 <h3 className="text-2xl font-semibold">E-mail</h3>
                 <p className="mt-2 text-lg">
-                  <a href="mailto:hello@quackrecruitment.co.uk" className="text-quackred-400 hover:underline">
+                  <a href="mailto:hello@quackrecruitment.co.uk" className="text-quackred-800 hover:underline">
                     hello@quackrecruitment.co.uk
                   </a>
                 </p>
@@ -59,7 +59,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex-1 md:w-1/2">
-              <h2 className="text-2xl font-bold leading-8 sm:text-3xl sm:leading-9 mb-6 text-white text-center">Get In Touch</h2>
+              <h2 className="text-2xl font-bold leading-8 sm:text-3xl sm:leading-9 mb-6 text-center">Get In Touch</h2>
               <GeneralContactForm />
             </div>
           </div>
@@ -68,7 +68,7 @@ const Contact = () => {
           <h2 className="text-2xl font-bold leading-8 text-black sm:text-3xl sm:leading-9 text-center mb-10">Our Locations</h2>
           <div></div>
         </Section> */}
-        <Section bgColor="bg-zinc-950 text-center">
+        <Section bgColor="bg-gray-50 text-center">
           <h2 className="text-2xl font-bold leading-8 text-black sm:text-3xl sm:leading-9 text-center mb-10">Serviced Locations & Offices</h2>
           <div
             className="relative max-w-screen-lg mx-auto"
