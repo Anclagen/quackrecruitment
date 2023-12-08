@@ -63,7 +63,7 @@ const ClientForm = () => {
     <ErrorBoundary>
       <Formik initialValues={initialValues} validationSchema={validationSchemas[activeSection]} onSubmit={handleSubmit}>
         {({ isValid, validateForm, setTouched, values }) => (
-          <div className="p-5 bg-zinc-300 text-black w-full max-w-lg rounded-xl shadow-xl transition-all duration-300 shadow-violet-300 mx-auto transition-all duration-1000 transform">
+          <div className="p-5 bg-zinc-300 text-black w-full max-w-lg rounded-xl shadow-xl transition-all duration-300 shadow-quackred-300 mx-auto transition-all duration-1000 transform">
             {formSubmittedSuccessfully ? (
               <div className="flex flex-col items-center justify-center h-full">
                 <span className="material-icons text-green-500 text-6xl mb-4">check_circle</span>
@@ -84,16 +84,16 @@ const ClientForm = () => {
                   </div>
                   <div className="flex flex-row my-4 h-12">
                     <img src={ContactImageOne} alt="Contact Image One" className="w-9 md:w-12" />
-                    <div className={`${activeSection > 0 ? "bg-violet-900" : "bg-white"} grow h-1 my-auto`}></div>
+                    <div className={`${activeSection > 0 ? "bg-quackred-900" : "bg-white"} grow h-1 my-auto`}></div>
                     <img src={ContactImageTwo} alt="Contact Image One" className={`${activeSection > 0 ? "" : "opacity-50"} w-9 md:w-12`} />
-                    <div className={`${activeSection > 1 ? "bg-violet-900" : "bg-white"} grow h-1 my-auto`}></div>
+                    <div className={`${activeSection > 1 ? "bg-quackred-900" : "bg-white"} grow h-1 my-auto`}></div>
                     <img src={ContactImageThree} alt="Contact Image One" className={`${activeSection > 1 ? "" : "opacity-50"} w-9 md:w-12`} />
                   </div>
                   <div className="flex mt-8">
                     <button
                       type="button"
                       onClick={() => setActiveSection((prev) => Math.max(0, prev - 1))}
-                      className={`${(activeSection === 0 && "hidden") || ""} bg-violet-900 hover:bg-violet-600 hover:text-white text-white py-2 px-4 rounded`}
+                      className={`${(activeSection === 0 && "hidden") || ""} bg-quackred-900 hover:bg-quackred-600 hover:text-white text-white py-2 px-4 rounded`}
                     >
                       Back
                     </button>
@@ -112,14 +112,14 @@ const ClientForm = () => {
                           setActiveSection((prev) => Math.min(2, prev + 1));
                         }
                       }}
-                      className={`${(activeSection === 2 && "hidden") || ""} ms-auto bg-violet-900 hover:bg-violet-600 hover:text-white text-white py-2 px-4 rounded `}
+                      className={`${(activeSection === 2 && "hidden") || ""} ms-auto bg-quackred-900 hover:bg-quackred-600 hover:text-white text-white py-2 px-4 rounded `}
                     >
                       Next
                     </button>
                   </div>
                   <div className="text-center mt-5" style={{ display: activeSection === 2 ? "block" : "none" }}>
                     {formErrors && <div className="error error-message">{formErrors}</div>}
-                    <button className={`bg-violet-900 hover:bg-violet-600 hover:text-white text-white py-2 px-4 rounded`} type="submit">
+                    <button className={`bg-quackred-900 hover:bg-quackred-600 hover:text-white text-white py-2 px-4 rounded`} type="submit">
                       Submit
                     </button>
                   </div>

@@ -72,7 +72,7 @@ const About = () => {
             <li>Professional Indemnity = £10m </li>
           </ul>
           <p className="mt-4 text-lg leading-6">To find out if we can help, get in touch with your Regional Business Development Manager who will be excited to hear about what you do!</p>
-          <a href="mailto:sales@quackrecruitment.co.uk" className="mt-1 text-violet-900 hover:underline">
+          <a href="mailto:sales@quackrecruitment.co.uk" className="mt-1 text-quackred-900 hover:underline">
             sales@quackrecruitment.co.uk
           </a>
         </FadeInFreeTextSection>

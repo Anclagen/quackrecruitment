@@ -25,7 +25,7 @@ const DetailsSection = ({ title, content = [], linkText = "", linkURL = "", deta
                 <div class="w-full md:w-1/3">
                   <Link
                     href={linkURL}
-                    className="py-4 px-6  bg-violet-900 hover:bg-violet-600 focus:ring-violet-500 focus:ring-offset-violet-200 text-white w-full transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+                    className="py-4 px-6  bg-quackred-900 hover:bg-quackred-600 focus:ring-quackred-500 focus:ring-offset-quackred-200 text-white w-full transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
                   >
                     {linkText}
                   </Link>
@@ -39,7 +39,7 @@ const DetailsSection = ({ title, content = [], linkText = "", linkURL = "", deta
               {details.map(({ title, detail }, index) => (
                 <li class="flex mx-1" key={index}>
                   <div class="px-4 my-auto">
-                    <span class="flex items-center justify-center w-12 h-12 mx-auto text-xl font-bold text-violet-600 rounded-full font-heading bg-violet-50">{index + 1}</span>
+                    <span class="flex items-center justify-center w-12 h-12 mx-auto text-xl font-bold text-quackred-600 rounded-full font-heading bg-quackred-50">{index + 1}</span>
                   </div>
                   <div class="px-4">
                     <h3 class="mt-4 text-xl font-semibold">{title}</h3>

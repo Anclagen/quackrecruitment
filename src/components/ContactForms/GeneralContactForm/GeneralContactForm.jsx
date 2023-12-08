@@ -42,7 +42,7 @@ const GeneralContactForm = () => {
       <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
         {() => (
           <div
-            className={`p-5 bg-zinc-300 text-black w-full max-w-lg rounded-xl shadow-lg transition-all shadow-violet-300 mx-auto transition-height duration-2000 transform ${
+            className={`p-5 bg-zinc-300 text-black w-full max-w-lg rounded-xl shadow-lg transition-all shadow-quackred-300 mx-auto transition-height duration-2000 transform ${
               formSubmittedSuccessfully ? "h-[300px]" : "h-[570px]"
             }`}
           >
@@ -100,7 +100,7 @@ const GeneralContactForm = () => {
                         </div>
                         <div className="text-center mt-5">
                           {formErrors && <div className="error error-message">{formErrors}</div>}
-                          <button className={`bg-violet-900 hover:bg-violet-600 hover:text-white text-white py-2 px-4 rounded`} type="submit">
+                          <button className={`bg-quackred-900 hover:bg-quackred-600 hover:text-white text-white py-2 px-4 rounded`} type="submit">
                             Submit
                           </button>
                         </div>

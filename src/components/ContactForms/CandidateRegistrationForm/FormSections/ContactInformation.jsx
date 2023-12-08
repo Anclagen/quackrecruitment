@@ -40,7 +40,7 @@ const ContactInformation = () => {
                 setFieldValue("yearsAtAddress", "yes");
               }}
             />
-            <span className={`w-6 h-6 mr-2 rounded-full border-2 ${values.yearsAtAddress === "yes" ? "bg-violet-950 border-white" : "border-white"}`}></span>
+            <span className={`w-6 h-6 mr-2 rounded-full border-2 ${values.yearsAtAddress === "yes" ? "bg-quackred-950 border-white" : "border-white"}`}></span>
             Yes
           </label>
           <label className="flex items-center cursor-pointer">
@@ -54,7 +54,7 @@ const ContactInformation = () => {
                 setFieldValue("yearsAtAddress", "no");
               }}
             />
-            <span className={`w-6 h-6 mr-2 rounded-full border-2 ${values.yearsAtAddress === "no" ? "bg-violet-950 border-white" : "border-white"}`}></span>
+            <span className={`w-6 h-6 mr-2 rounded-full border-2 ${values.yearsAtAddress === "no" ? "bg-quackred-950 border-white" : "border-white"}`}></span>
             No
           </label>
         </div>

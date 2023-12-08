@@ -103,7 +103,7 @@ const CandidateRegistrationForm = () => {
   if (success) {
     return (
       <div
-        className={`"p-5 text-center bg-zinc-300 text-black w-full max-w-lg rounded-xl shadow-xl transition-all duration-300 shadow-violet-300 transition-height duration-2000 transform reduceHeightCan`}
+        className={`"p-5 text-center bg-zinc-300 text-black w-full max-w-lg rounded-xl shadow-xl transition-all duration-300 shadow-quackred-300 transition-height duration-2000 transform reduceHeightCan`}
       >
         <div className="my-auto max-h-fit p-4">
           <span className="material-icons text-green-500 text-6xl mt-6 mb-4">check_circle</span>
@@ -118,7 +118,7 @@ const CandidateRegistrationForm = () => {
     <ErrorBoundary>
       <Formik initialValues={initialState} validationSchema={Schema[activeSection]} onSubmit={handleSubmit}>
         {({ isValid, validateForm, setTouched, isSubmitting, setFieldValue, values }) => (
-          <Form className="p-5 bg-zinc-300 text-black w-full max-w-lg rounded-xl shadow-xl transition-all duration-300 shadow-violet-300">
+          <Form className="p-5 bg-zinc-300 text-black w-full max-w-lg rounded-xl shadow-xl transition-all duration-300 shadow-quackred-300">
             <div>
               <div className="">
                 <div className="">
@@ -155,7 +155,7 @@ const CandidateRegistrationForm = () => {
                     <button
                       type="button"
                       onClick={() => setActiveSection((prev) => Math.max(0, prev - 1))}
-                      className={`${(activeSection === 0 && "hidden") || ""} bg-violet-900 hover:bg-violet-600 hover:text-white text-white py-2 px-4 rounded`}
+                      className={`${(activeSection === 0 && "hidden") || ""} bg-quackred-900 hover:bg-quackred-600 hover:text-white text-white py-2 px-4 rounded`}
                     >
                       Back
                     </button>
@@ -178,7 +178,7 @@ const CandidateRegistrationForm = () => {
                           setActiveSection((prev) => Math.min(5, prev + 1));
                         }
                       }}
-                      className={`${(activeSection === 5 && "hidden") || ""} ms-auto bg-violet-900 hover:bg-violet-600 hover:text-white text-white py-2 px-4 rounded `}
+                      className={`${(activeSection === 5 && "hidden") || ""} ms-auto bg-quackred-900 hover:bg-quackred-600 hover:text-white text-white py-2 px-4 rounded `}
                     >
                       Next
                     </button>
@@ -193,7 +193,7 @@ const CandidateRegistrationForm = () => {
                         <>
                           <div className="error error-message">
                             {formErrors} If problem persist please submit your details to using the provided{" "}
-                            <Link target="_blank" href={"/contact/candidate-registration/fallback"} className="text-violet-950 font-semibold">
+                            <Link target="_blank" href={"/contact/candidate-registration/fallback"} className="text-quackred-950 font-semibold">
                               email template here.
                             </Link>
                           </div>
@@ -201,7 +201,7 @@ const CandidateRegistrationForm = () => {
                       )}
                       <Field type="text" name="botInput" style={{ display: "none" }} autoComplete="off" />
                       <button
-                        className={`${uploadError || !agree ? "opacity-50" : ""} bg-violet-900 hover:bg-violet-600 hover:text-white text-white py-2 px-4 rounded`}
+                        className={`${uploadError || !agree ? "opacity-50" : ""} bg-quackred-900 hover:bg-quackred-600 hover:text-white text-white py-2 px-4 rounded`}
                         disabled={uploadError || !agree}
                         type="submit"
                       >

@@ -24,7 +24,7 @@ const Listings = () => {
               href="https://www.cv-library.co.uk/list-jobs/309161/Quack-Recruitment#profile-list-jobs"
               target="_blank"
               rel="noreferrer"
-              className="flex text-violet-900 hover:text-violet-600 inline-block w-fit ps-1"
+              className="flex text-quackred-900 hover:text-quackred-600 inline-block w-fit ps-1"
             >
               <span className=" hover:underline inline-block">CV Library </span>
               <span className="flex items-center justify-center flex-shrink-0 w-6 h-6 rounded-full ps-3 !no-underline">

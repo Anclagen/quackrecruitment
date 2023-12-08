@@ -17,7 +17,7 @@ const Footer = () => {
           {/* <p className="text-center mb-6">(Logos: Stronger Together / Crown Commercial Supplier)</p> */}
         </div>
         {/* Top Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-10 border-t border-violet-300 pt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-10 border-t border-quackred-300 pt-6">
           {/* Logo and Description */}
           <div className="px-2 md:ps-6">
             <h3 className="mb-3 text-xl font-bold">General</h3>
@@ -93,7 +93,7 @@ const Footer = () => {
           </div>
         </div>
         {/* Quack group and affiliated */}
-        <div className="border-t border-violet-300 pt-6">
+        <div className="border-t border-quackred-300 pt-6">
           {/* Copyright */}
           <div className="flex flex-col mb-8">
             <img src="/logos/quack-group-horizonal-full-logo-white.png" alt="Quack Group Full Logo" className="my-3 w-full sm:w-80 md:w-96 mx-auto" />
@@ -112,14 +112,14 @@ const Footer = () => {
           </div>
         </div>
         {/* Bottom Section */}
-        <div className="border-t border-violet-300 pt-6">
+        <div className="border-t border-quackred-300 pt-6">
           {/* Copyright */}
           <div className="text-lg font-semibold text-center">
             <p>Quack Recruitment Ltd. © 2023</p>
             <p>Quack Recruitment, Business & Technology Centre, Bessemer Drive, Stevenage, SG1 2DX </p>
             <p>
               Company number:{" "}
-              <a target="_blank" href="https://find-and-update.company-information.service.gov.uk/company/11066952" className="text-violet-300">
+              <a target="_blank" href="https://find-and-update.company-information.service.gov.uk/company/11066952" className="text-quackred-300">
                 11066952
               </a>
             </p>

@@ -274,7 +274,7 @@ const PrivacyPolicy = () => {
               </p>
               <p className="my-2">
                 {`Right to Complain: If you are unhappy with the way that we have handled your data, you can make a complaint to the Information Commissioners Office (ICO) which is the UK authority responsible for data protection. Contact details are available online, or alternatively please ask us on `}
-                <a className="text-violet-950 hover:text-violet-700 font-semibold" href="mailto:hello@quackrecruitment.co.uk">
+                <a className="text-quackred-950 hover:text-quackred-700 font-semibold" href="mailto:hello@quackrecruitment.co.uk">
                   hello@quackrecruitment.co.uk
                 </a>
                 {` for assistance.`}
@@ -290,7 +290,7 @@ const PrivacyPolicy = () => {
             <ExpandableSection title="9. Contact Us.">
               <p className="my-2">
                 {"If you have any questions in relation to this Privacy Policy, or if you would like to contact us to exercise your rights as stated in this Privacy Policy, you may contact us at: "}
-                <a className="text-violet-950 hover:text-violet-700 font-semibold" href="mailto:hello@quackrecruitment.co.uk">
+                <a className="text-quackred-950 hover:text-quackred-700 font-semibold" href="mailto:hello@quackrecruitment.co.uk">
                   hello@quackrecruitment.co.uk
                 </a>
               </p>

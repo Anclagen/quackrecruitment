@@ -79,7 +79,7 @@ const RecruitmentForm = () => {
   if (success) {
     return (
       <div
-        className={`"p-5 text-center bg-zinc-300 text-black w-full max-w-lg rounded-xl shadow-xl transition-all duration-300 shadow-violet-300 transition-height duration-2000 transform reduceHeightCan`}
+        className={`"p-5 text-center bg-zinc-300 text-black w-full max-w-lg rounded-xl shadow-xl transition-all duration-300 shadow-quackred-300 transition-height duration-2000 transform reduceHeightCan`}
       >
         <div className="my-auto max-h-fit p-4">
           <span className="material-icons text-green-500 text-6xl mt-6 mb-4">check_circle</span>
@@ -94,7 +94,7 @@ const RecruitmentForm = () => {
     <ErrorBoundary>
       <Formik initialValues={initialState} validationSchema={validationSchema[activeSection]} onSubmit={handleSubmit}>
         {({ isValid, validateForm, setTouched }) => (
-          <Form className="p-5 bg-zinc-300 text-black w-full max-w-lg rounded-xl shadow-xl transition-all duration-300 shadow-violet-300">
+          <Form className="p-5 bg-zinc-300 text-black w-full max-w-lg rounded-xl shadow-xl transition-all duration-300 shadow-quackred-300">
             <div>
               <div className="">
                 <div className="">
@@ -116,18 +116,18 @@ const RecruitmentForm = () => {
                   </div>
                   <div className="flex flex-row my-4 h-12">
                     <img src={ContactImageOne} alt="Contact Image One" className="w-9 md:w-12" />
-                    <div className={`${activeSection > 0 ? "bg-violet-900" : "bg-white"} grow h-1 my-auto`}></div>
+                    <div className={`${activeSection > 0 ? "bg-quackred-900" : "bg-white"} grow h-1 my-auto`}></div>
                     <img src={ContactImageTwo} alt="Contact Image One" className={`${activeSection > 0 ? "" : "opacity-50"} w-9 md:w-12`} />
-                    <div className={`${activeSection > 1 ? "bg-violet-900" : "bg-white"} grow h-1 my-auto`}></div>
+                    <div className={`${activeSection > 1 ? "bg-quackred-900" : "bg-white"} grow h-1 my-auto`}></div>
                     <img src={ContactImageThree} alt="Contact Image One" className={`${activeSection > 1 ? "" : "opacity-50"} w-9 md:w-12`} />
-                    <div className={`${activeSection > 2 ? "bg-violet-900" : "bg-white"} grow h-1 my-auto`}></div>
+                    <div className={`${activeSection > 2 ? "bg-quackred-900" : "bg-white"} grow h-1 my-auto`}></div>
                     <img src={ContactImageFour} alt="Contact Image One" className={`${activeSection > 2 ? "" : "opacity-50"} w-9 md:w-12`} />
                   </div>
                   <div className="flex mt-8">
                     <button
                       type="button"
                       onClick={() => setActiveSection((prev) => Math.max(0, prev - 1))}
-                      className={`${(activeSection === 0 && "hidden") || ""} bg-violet-900 hover:bg-violet-600 hover:text-white text-white py-2 px-4 rounded`}
+                      className={`${(activeSection === 0 && "hidden") || ""} bg-quackred-900 hover:bg-quackred-600 hover:text-white text-white py-2 px-4 rounded`}
                     >
                       Back
                     </button>
@@ -146,7 +146,7 @@ const RecruitmentForm = () => {
                           setActiveSection((prev) => Math.min(3, prev + 1));
                         }
                       }}
-                      className={`${(activeSection === 3 && "hidden") || ""} ms-auto bg-violet-900 hover:bg-violet-600 hover:text-white text-white py-2 px-4 rounded `}
+                      className={`${(activeSection === 3 && "hidden") || ""} ms-auto bg-quackred-900 hover:bg-quackred-600 hover:text-white text-white py-2 px-4 rounded `}
                     >
                       Next
                     </button>
@@ -159,7 +159,7 @@ const RecruitmentForm = () => {
 
                       {formErrors && <div className="error error-message">{formErrors}</div>}
                       <button
-                        className={`${uploadError || !agree ? "opacity-50" : ""} bg-violet-900 hover:bg-violet-600 hover:text-white text-white py-2 px-4 rounded`}
+                        className={`${uploadError || !agree ? "opacity-50" : ""} bg-quackred-900 hover:bg-quackred-600 hover:text-white text-white py-2 px-4 rounded`}
                         disabled={uploadError || !agree}
                         type="submit"
                       >

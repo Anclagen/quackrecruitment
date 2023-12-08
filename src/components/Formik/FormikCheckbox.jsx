@@ -10,7 +10,7 @@ function FormikCheckbox({ label, id }) {
       </label>
       <label className="flex items-center cursor-pointer">
         <Field {...field} type="checkbox" id={id} name={id} className="sr-only" />
-        <span className={`w-6 h-6 ml-2 border-2 ${field.checked ? "bg-violet-950 border-white" : "border-white"}`}></span>
+        <span className={`w-6 h-6 ml-2 border-2 ${field.checked ? "bg-quackred-950 border-white" : "border-white"}`}></span>
       </label>
       <div>
         <ErrorMessage name={id} component="span" className="error-message w-full text-center text-sm" />

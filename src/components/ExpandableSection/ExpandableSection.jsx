@@ -18,9 +18,9 @@ function ExpandableSection({ title, children }) {
   });
 
   return (
-    <div className="w-full mb-5 border border-violet-900 rounded-t bg-zinc-50">
+    <div className="w-full mb-5 border border-quackred-900 rounded-t bg-zinc-50">
       <button
-        className="w-full text-left bg-violet-100 hover:bg-violet-200 text-black font-semibold py-2 px-4 rounded transition-colors duration-200 flex gap-6"
+        className="w-full text-left bg-quackred-100 hover:bg-quackred-200 text-black font-semibold py-2 px-4 rounded transition-colors duration-200 flex gap-6"
         onClick={() => setIsOpen((val) => !val)}
       >
         <h2 className="block w-fit">{title}</h2>{" "}

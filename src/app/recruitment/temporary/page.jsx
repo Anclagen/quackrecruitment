@@ -46,7 +46,7 @@ const TemporaryRecruitment = () => {
         </Section>
         <Section bgColor="bg-gray-50">
           <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Temporary Recruitment FAQ</h2>
-          <div className="mx-auto max-w-screen-md rounded-lg border border-violet-900 overflow-hidden">
+          <div className="mx-auto max-w-screen-md rounded-lg border border-quackred-900 overflow-hidden">
             <ExpandableSectionFAQ title="How quickly can you fill a temporary position?">
               <p>We pride ourselves on our swift response times. Depending on the specifics of the role and our current talent pool, we can often fill positions within a few days to a week.</p>
             </ExpandableSectionFAQ>
@@ -88,7 +88,7 @@ const TemporaryRecruitment = () => {
               </p>
               <Link
                 href="/recruitment/on-site-managed"
-                class="mt-6 py-2 px-4 block bg-violet-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
+                class="mt-6 py-2 px-4 block bg-quackred-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
               >
                 Learn More
               </Link>
@@ -100,7 +100,7 @@ const TemporaryRecruitment = () => {
               </p>
               <Link
                 href="/recruitment/temporary"
-                class="py-2 px-4 block bg-violet-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg  mt-6"
+                class="py-2 px-4 block bg-quackred-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg  mt-6"
               >
                 Learn More
               </Link>
@@ -114,7 +114,7 @@ const TemporaryRecruitment = () => {
               </p>
               <Link
                 href="/recruitment/permanent"
-                class="py-2 px-4 block bg-violet-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg mt-6"
+                class="py-2 px-4 block bg-quackred-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg mt-6"
               >
                 Learn More
               </Link>

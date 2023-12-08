@@ -11,12 +11,12 @@ function FormikYesNoDetails({ name, question, detailsLabel, placeholder = "" }) 
         <div className="mt-2 flex items-center space-x-3 gap-6">
           <label className="flex items-center cursor-pointer">
             <Field type="radio" name={name} value="yes" className="sr-only" />
-            <span className={`w-6 h-6 mr-2 rounded-full border-2 ${field.value === "yes" ? "bg-violet-950 border-white" : "border-white"}`}></span>
+            <span className={`w-6 h-6 mr-2 rounded-full border-2 ${field.value === "yes" ? "bg-quackred-950 border-white" : "border-white"}`}></span>
             Yes
           </label>
           <label className="flex items-center cursor-pointer">
             <Field type="radio" name={name} value="no" className="sr-only" />
-            <span className={`w-6 h-6 mr-2 rounded-full border-2 ${field.value === "no" ? "bg-violet-950 border-white" : "border-white"}`}></span>
+            <span className={`w-6 h-6 mr-2 rounded-full border-2 ${field.value === "no" ? "bg-quackred-950 border-white" : "border-white"}`}></span>
             No
           </label>
         </div>

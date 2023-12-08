@@ -38,7 +38,7 @@ const Recruitment = () => {
               </p>
               <Link
                 href="/recruitment/on-site-managed"
-                class="mt-6 py-2 px-4 block bg-violet-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
+                class="mt-6 py-2 px-4 block bg-quackred-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
               >
                 Learn More
               </Link>
@@ -50,7 +50,7 @@ const Recruitment = () => {
               </p>
               <Link
                 href="/recruitment/temporary"
-                class="py-2 px-4 block bg-violet-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg  mt-6"
+                class="py-2 px-4 block bg-quackred-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg  mt-6"
               >
                 Learn More
               </Link>
@@ -64,7 +64,7 @@ const Recruitment = () => {
               </p>
               <Link
                 href="/recruitment/permanent"
-                class="py-2 px-4 block bg-violet-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg mt-6"
+                class="py-2 px-4 block bg-quackred-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg mt-6"
               >
                 Learn More
               </Link>
