@@ -115,7 +115,7 @@ const About = () => {
           </a> */}
         </FadeInFreeTextSection>
       </Section>
-      <Section bgColor="bg-zinc-950">
+      {/* <Section bgColor="bg-zinc-950">
         <h3 className="text-2xl text-white font-semibold text-center mt-16 mb-10">Leadership Team</h3>
         <p className="mb-32 text-xl font-normal text-center text-gray-200 max-w-screen-lg px-10 mx-auto">
           We have selected our team not only based on industry knowledge but based on passion for success and wanting to go that extra mile to develop themselves, our clients & candidates.
@@ -129,7 +129,7 @@ const About = () => {
             linkedin={"https://www.linkedin.com/in/jamie-croall-92459987/"}
           />
         </CardSection>
-      </Section>
+      </Section> */}
     </>
   );
 };

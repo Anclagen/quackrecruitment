@@ -29,8 +29,8 @@ const Home = () => {
       </Head>
       <main>
         <BannerHome
-          title="Quack Recruitment"
-          slogan="Turn Passion into Profession."
+          title="Quack Recruitment & Training"
+          slogan="Whether your looking to recruit, or train the best talent... we've got you covered!"
           imgSrc="images/banners/pexels-sevenstorm-juhaszimrus-443383.jpg"
           imgAlt="Descriptive Image Alt Text"
           links={[
@@ -74,10 +74,10 @@ const Home = () => {
             image="/images/hardhat.png"
           />
         </Section>
-        <Section bgColor="bg-zinc-950 text-white">
-          <FadeInFreeTextSection title="Our Comprehensive Recruitment Solutions" imageSrc="/images/interview-1.jpg" imageAlt="Description" dark={true}>
+        <Section bgColor="bg-gray-50">
+          <FadeInFreeTextSection title="Our Comprehensive Recruitment Solutions" imageSrc="/images/interview-1.jpg" imageAlt="Description">
             <p className="mt-4 text-lg leading-6">
-              <b>Assisted Advertising:</b> Boost your reach with Quack! Streamlined job ads and tailored screening options ensure you never miss top talent.
+              <b>On-Site Managed Services:</b> Benefit from dedicated teams that integrate seamlessly with your HR department, offering scalable and cost-efficient staffing solutions.
             </p>
             <p className="mt-4 text-lg leading-6">
               <b>Temporary Recruitment:</b>
@@ -105,49 +105,49 @@ const Home = () => {
             reverse={true}
           />
         </Section>
-        <Section bgColor="bg-zinc-950 text-white">
+        <Section bgColor="bg-gray-50">
           <h2 className="text-3xl text-center mb-10 font-semibold">Why Choose QS Recruitment?</h2>
           <CardSection>
             <CardMinimalIconTop
               title="Compliant Provider"
               icon="lock"
-              color={`text-blue-400 text-8xl`}
-              textColor="text-white"
+              color={`text-blue-600 text-8xl`}
+              textColor="text-black"
               text="Licensed by GLAA, we prioritize regulatory adherence in every operation, ensuring ethical recruitment practices."
             />
             <CardMinimalIconTop
               title="Expert Team"
               icon="school"
-              color={`text-indigo-400 text-8xl`}
-              textColor="text-white"
+              color={`text-indigo-600 text-8xl`}
+              textColor="text-black"
               text="Our Senior Consultants aren’t just seasoned—they're specialists in niche fields, bringing top-tier expertise to every hire."
             />
             <CardMinimalIconTop
               title="Quality Guaranteed"
               icon="award_star"
-              color={`text-yellow-400 text-8xl`}
-              textColor="text-white"
+              color={`text-yellow-600 text-8xl`}
+              textColor="text-black"
               text="Dedicated to a seamless experience, our team is always on standby, ensuring support whenever you need."
             />
             <CardMinimalIconTop
               title="Tailored Solutions"
               icon="cut"
-              color={`text-teal-400 text-8xl`}
-              textColor="text-white"
+              color={`text-teal-600 text-8xl`}
+              textColor="text-black"
               text="Every organization is unique. We offer customized recruitment models, catering to both small businesses and major corporations."
             />
             <CardMinimalIconTop
               title="Diverse Hiring Capabilities"
               icon="diversity_2"
-              color={`text-green-400 text-8xl`}
-              textColor="text-white"
+              color={`text-green-600 text-8xl`}
+              textColor="text-black"
               text="From role advertising to sudden staffing shifts or finding the ideal permanent hire, we turn your challenges into opportunities."
             />
             <CardMinimalIconTop
               title="Industry Affiliation"
               icon="share"
-              color={`text-red-400 text-8xl`}
-              textColor="text-white"
+              color={`text-red-600 text-8xl`}
+              textColor="text-black"
               text="Registered with leading industry affiliates, our credentials highlight our commitment to recruitment excellence."
             />
           </CardSection>

@@ -45,7 +45,7 @@ export const CardMinimalIconTop = ({ title, icon, color, text, textColor = "text
   return (
     <div
       ref={ref}
-      className={`rounded-lg shadow-lg overflow-hidden text-center ${textColor} transition-all duration-2000 transform ${inView ? "" : "opacity-0 mt-20"}`}
+      className={`bg-zinc-50 rounded-lg shadow-quackred-100 shadow-lg overflow-hidden text-center ${textColor} transition-all duration-2000 transform ${inView ? "" : "opacity-0 mt-20"}`}
       style={{ transitionDuration: "2500ms" }}
     >
       <div className="w-100">
