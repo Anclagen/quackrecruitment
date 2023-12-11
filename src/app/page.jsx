@@ -106,7 +106,7 @@ const Home = () => {
           />
         </Section>
         <Section bgColor="bg-gray-50">
-          <h2 className="text-3xl text-center mb-10 font-semibold">Why Choose QS Recruitment?</h2>
+          <h2 className="text-3xl text-center mb-10 font-semibold">Why Choose Quack Recruitment?</h2>
           <CardSection>
             <CardMinimalIconTop
               title="Compliant Provider"
