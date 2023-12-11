@@ -42,16 +42,14 @@ const About = () => {
             </p>
             <h3 className="mt-4 text-lg leading-6 font-semibold"> Recruitment Expertise</h3>
             <p className="mt-4 text-lg leading-6">
-              {" "}
-              Navigating the dynamic and ever changing landscapes of recruitment, we pride ourselves on sourcing the best candidates to meet your organisation's demands. Whether you're seeking
-              temporary staff for project peaks, permanent team members, or comprehensive managed services, we tailor our approach to ensure a seamless fit with your company culture and objectives.
+              {`Navigating the dynamic and ever changing landscapes of recruitment, we pride ourselves on sourcing the best candidates to meet your organisation's demands. Whether you're seeking
+              temporary staff for project peaks, permanent team members, or comprehensive managed services, we tailor our approach to ensure a seamless fit with your company culture and objectives.`}
             </p>
             <h3 className="mt-4 text-lg leading-6 font-semibold"> Training Division</h3>
             <p className="mt-4 text-lg leading-6">
-              {" "}
-              At the core of our business, we have a dedicated Training Division committed to shaping the future workforce. Our comprehensive Level 3 courses cover key areas such as Administration &
+              {`At the core of our business, we have a dedicated Training Division committed to shaping the future workforce. Our comprehensive Level 3 courses cover key areas such as Administration &
               Customer Service, CSCS, SIA and many more. We believe in equipping individuals with the skills and knowledge needed to excel in their roles, fostering professional growth and
-              contributing to the success of businesses.
+              contributing to the success of businesses.`}
             </p>
           </div>
 
@@ -89,7 +87,8 @@ const About = () => {
             <b>Professional Development:</b> The success of our Training Division lies in empowering individuals to excel in their roles, contributing to the growth of both individuals and businesses.
           </p>
           <p className="mt-4 text-lg leading-6">
-            <b>Tailored Services:</b> Whether you're a startup, a growing business, or an established enterprise, our services are customised to meet your specific needs.
+            <b>Tailored Services:</b>
+            {` Whether you're a startup, a growing business, or an established enterprise, our services are customised to meet your specific needs.`}
           </p>
           <p className="mt-4 text-lg leading-6">
             Partner with Quack Recruitment & Training, for a strategic alliance that goes beyond conventional recruitment. Experience a journey where every placement is not just a transaction but a
