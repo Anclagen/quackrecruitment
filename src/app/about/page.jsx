@@ -40,7 +40,7 @@ const About = () => {
               in catering to the diverse needs of the temporary, permanent, and managed services sectors. Our commitment to precision and understanding the unique requirements of each industry sets us
               apart.
             </p>
-            <h3 className="mt-4 text-lg leading-6 font-semibold"> Recruitment Expertise</h3>
+            <h3 className="mt-4 text-lg leading-6 font-semibold"> Recruitment Division</h3>
             <p className="mt-4 text-lg leading-6">
               {`Navigating the dynamic and ever changing landscapes of recruitment, we pride ourselves on sourcing the best candidates to meet your organisation's demands. Whether you're seeking
               temporary staff for project peaks, permanent team members, or comprehensive managed services, we tailor our approach to ensure a seamless fit with your company culture and objectives.`}

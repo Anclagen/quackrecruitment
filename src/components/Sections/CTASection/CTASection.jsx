@@ -9,7 +9,7 @@ const CTASection = ({ titleBlack, titlePurple, text, linkText, linkHref, image, 
   });
 
   return (
-    <div className={`flex overflow-hidden relative transition-all duration-2000 transform ${inView ? "" : "opacity-0 mt-20"}`} ref={ref}>
+    <div className={`flex relative transition-all duration-2000 transform ${inView ? "" : "opacity-0 mt-20"}`} ref={ref}>
       <div className={`text-start lg:w-1/2 text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20 ${reverse ? "md:order-2" : "md:order-1"}`}>
         <h2 className="text-3xl font-extrabold text-black sm:text-4xl">
           <span className="block">{titleBlack}</span>

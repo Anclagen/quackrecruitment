@@ -74,13 +74,14 @@ body {
   transition: all 0.3s ease;
 }
 /* Banner Background */
+.home-banner,
 .banner-gradient {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 @media only screen and (min-width: 768px) {
   .banner-gradient {
-    background: linear-gradient(130deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 55%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(130deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%);
   }
 }
 

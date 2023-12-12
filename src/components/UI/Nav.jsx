@@ -8,6 +8,21 @@ const Nav = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const menuButtonRef = useRef(null);
+  const [isDropdownOpen, setDropdownOpen] = useState({
+    training: false,
+    recruitment: false,
+    register: false,
+  });
+
+  // Function to toggle dropdowns
+  const toggleDropdown = (dropdown) => {
+    setDropdownOpen((prev) => ({ ...prev, [dropdown]: !prev[dropdown] }));
+  };
+
+  // Function to close all dropdowns
+  const closeAllDropdowns = () => {
+    setDropdownOpen({ training: false, recruitment: false, register: false });
+  };
 
   const handleMenuClose = () => {
     setMenuOpen(false);
@@ -23,7 +38,7 @@ const Nav = () => {
     if (isMenuOpen) {
       window.addEventListener("click", handleOutsideClick);
     }
-
+    closeAllDropdowns();
     return () => {
       window.removeEventListener("click", handleOutsideClick);
     };
@@ -43,12 +58,13 @@ const Nav = () => {
           </Link>
         </div>
         {/* Logo and Desktop Links here */}
-        <ul className="hidden md:flex space-x-5 pr-2">
+        <ul className="hidden lg:flex space-x-5 pr-2">
           {[
             { path: "/recruitment/listings", label: "Jobs" },
             { path: "/recruitment", label: "Recruitment" },
             { path: "/training", label: "Training" },
             { path: "/about", label: "About" },
+            { path: "/contact/register-candidate", label: "Register" },
             { path: "/contact", label: "Contact" },
           ].map((route) => (
             <li key={route.path}>
@@ -65,14 +81,14 @@ const Nav = () => {
           ))}
         </ul>
         {/* Mobile Menu Icon */}
-        <button ref={menuButtonRef} className="md:hidden text-black" onClick={() => setMenuOpen(!isMenuOpen)}>
+        <button ref={menuButtonRef} className="lg:hidden text-black mr-2" onClick={() => setMenuOpen(!isMenuOpen)}>
           <i className="material-icons  pointer-events-none pt-1">menu</i>
           <span className="sr-only">Open menu</span>
         </button>
       </div>
 
       {/* Mobile Menu */}
-      <div ref={menuRef} className={`fixed top-0 right-0 h-full bg-black bg-opacity-90 w-64 transform transition-transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}>
+      <div ref={menuRef} className={`fixed top-0 right-0 h-full bg-black bg-opacity-90 w-64 transform transition-transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"} lg:hidden`}>
         {/* Close button */}
         <div className="flex justify-end p-2 text-white">
           <button onClick={handleMenuClose}>
@@ -84,10 +100,11 @@ const Nav = () => {
         <ul className="flex flex-col space-y-4 p-4">
           {[
             { path: "/", label: "Home" },
+            { path: "/recruitment/listings", label: "Jobs" },
             { path: "/recruitment", label: "Recruitment" },
             { path: "/training", label: "Training" },
             { path: "/about", label: "About" },
-            { path: "/legal", label: "Legal" },
+            { path: "/contact/register-candidate", label: "Register" },
             { path: "/contact", label: "Contact" },
           ].map((route) => (
             <li key={route.path}>
