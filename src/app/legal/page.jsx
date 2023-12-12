@@ -1,7 +1,7 @@
 import BannerHalf from "@/components/Banner/BannerHalf";
 import Section from "../../components/Sections/Section";
 import Link from "next/link";
-import FadeInFreeTextSection from "@/components/Sections/FadeInFreeFormatSection/FadeInFreeFormateSection";
+import FadeInFreeTextSection from "@/components/Sections/FadeInFreeFormatSection";
 
 export const metadata = {
   title: "Legal | Quack Recruitment & Training",

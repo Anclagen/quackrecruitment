@@ -1,7 +1,7 @@
 import BannerHalf from "@/components/Banner/BannerHalf";
 import Section from "@/components/Sections/Section";
 import DetailsSection from "@/components/Sections/DetailsSection";
-import { CourseCard } from "@/components/Card/Card";
+import { CourseCard } from "@/components/Card";
 
 export const metadata = {
   title: "Training | Quack Recruitment & Training",

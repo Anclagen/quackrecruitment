@@ -1,9 +1,9 @@
 import BannerHome from "../../components/Banner/BannerHome";
 import Section from "../../components/Sections/Section";
-import CardSection from "../../components/Sections/CardSection/CardSection";
-import { ProfileCard } from "../../components/Card/Card";
+import CardSection from "../../components/Sections/CardSection";
+import { ProfileCard } from "../../components/Card";
 import FourImageStretch from "../../components/Sections/FourImageFeature/FourImageStretch";
-import FadeInFreeTextSection from "@/components/Sections/FadeInFreeFormatSection/FadeInFreeFormateSection";
+import FadeInFreeTextSection from "@/components/Sections/FadeInFreeFormatSection";
 
 export const metadata = {
   title: "Services | Quack Recruitment & Training",

@@ -2,7 +2,7 @@ import BannerHome from "@/components/Banner/BannerHome";
 import BannerHalf from "@/components/Banner/BannerHalf";
 import Section from "@/components/Sections/Section";
 import FAQSection from "@/components/Sections/FAQSection";
-import FadeInFreeTextSection from "@/components/Sections/FadeInFreeFormatSection/FadeInFreeFormateSection";
+import FadeInFreeTextSection from "@/components/Sections/FadeInFreeFormatSection";
 import Link from "next/link";
 import Flipper from "@/components/Sections/Flipper";
 import PageLink from "@/components/PageLink";

@@ -1,12 +1,12 @@
 import BannerHome from "../components/Banner/BannerHome";
 import Section from "../components/Sections/Section";
-import FadeInFreeTextSection from "@/components/Sections/FadeInFreeFormatSection/FadeInFreeFormateSection";
-import { CardMinimalIconTop, TestimonialCard } from "../components/Card/Card";
-import CardSection from "../components/Sections/CardSection/CardSection";
+import FadeInFreeTextSection from "@/components/Sections/FadeInFreeFormatSection";
+import { CardMinimalIconTop, TestimonialCard } from "../components/Card";
+import CardSection from "../components/Sections/CardSection";
 import Link from "next/link";
 import { keywords } from "../components/data/keywords";
 import FourImageStretch from "@/components/Sections/FourImageFeature/FourImageStretch";
-import CTASection from "../components/Sections/CTASection/CTASection";
+import CTASection from "../components/Sections/CTASection";
 import Head from "next/head";
 import PageLink from "@/components/PageLink";
 
