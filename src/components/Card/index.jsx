@@ -125,49 +125,49 @@ export const CourseCard = ({ title, description, points = [], price, locations =
     rootMargin: "-80px 0px", // Start the animation slightly before the element is in view
   });
   return (
-    <div class={`relative max-w-lg px-4 mx-auto sm:px-6 lg:px-8 ${inView ? "" : "opacity-0 mt-20"}`} ref={ref}>
-      <div class="max-w-lg mx-auto overflow-hidden rounded-lg shadow-lg pricing-box lg:max-w-none mb-10">
-        <div class="px-6 py-8 bg-quackred-50 lg:p-12">
-          <h3 class="text-2xl font-extrabold leading-8 text-gray-900 sm:text-3xl sm:leading-9">{title}</h3>
-          <p class="mt-6 text-base leading-6 text-gray-700 ">{description}</p>
-          <div class="mt-8">
-            <div class="flex items-center">
-              <h4 class="flex-shrink-0 pr-4 text-sm font-semibold leading-5 tracking-wider text-quackred-800 uppercase">What&#x27;s covered</h4>
-              <div class="flex-1 border-t-2 border-gray-200"></div>
+    <div className={`relative max-w-lg px-4 mx-auto sm:px-6 lg:px-8 ${inView ? "" : "opacity-0 mt-20"}`} ref={ref}>
+      <div className="max-w-lg mx-auto overflow-hidden rounded-lg shadow-lg pricing-box lg:max-w-none mb-10">
+        <div className="px-6 py-8 bg-quackred-50 lg:p-12">
+          <h3 className="text-2xl font-extrabold leading-8 text-gray-900 sm:text-3xl sm:leading-9">{title}</h3>
+          <p className="mt-6 text-base leading-6 text-gray-700 ">{description}</p>
+          <div className="mt-8">
+            <div className="flex items-center">
+              <h4 className="flex-shrink-0 pr-4 text-sm font-semibold leading-5 tracking-wider text-quackred-800 uppercase">What&#x27;s covered</h4>
+              <div className="flex-1 border-t-2 border-gray-200"></div>
             </div>
-            <ul class="mt-6 ms-6">
+            <ul className="mt-6 ms-6">
               {points.map(({ title, description }, index) => (
-                <li class="text-quackred-800 font-bold list-disc" key={index}>
+                <li className="text-quackred-800 font-bold list-disc" key={index}>
                   {title}: <span className="text-black font-normal">{description}</span>
                 </li>
               ))}
             </ul>
           </div>
-          <div class="mt-8">
-            <div class="flex items-center">
-              <h4 class="flex-shrink-0 pr-4 text-sm font-semibold leading-5 tracking-wider text-quackred-800 uppercase">Locations</h4>
-              <div class="flex-1 border-t-2 border-gray-200"></div>
+          <div className="mt-8">
+            <div className="flex items-center">
+              <h4 className="flex-shrink-0 pr-4 text-sm font-semibold leading-5 tracking-wider text-quackred-800 uppercase">Locations</h4>
+              <div className="flex-1 border-t-2 border-gray-200"></div>
             </div>
-            <ul class="mt-6 ms-6">
+            <ul className="mt-6 ms-6">
               {locations.map((location, index) => (
-                <li class="text-quackred-800 font-bold list-disc" key={index}>
+                <li className="text-quackred-800 font-bold list-disc" key={index}>
                   {location}
                 </li>
               ))}
             </ul>
           </div>
         </div>
-        <div class="px-6 py-8 text-center bg-gray-50 lg:p-12 bg-quackred-200">
+        <div className="px-6 py-8 text-center bg-gray-50 lg:p-12 bg-quackred-200">
           <p className=" mb-6">
-            <span class="text-base font-medium leading-6 text-gray-700">Starting from </span>
-            <span class="text-lg font-semibold leading-none text-gray-900">${price}</span>
+            <span className="text-base font-medium leading-6 text-gray-700">Starting from </span>
+            <span className="text-lg font-semibold leading-none text-gray-900">${price}</span>
           </p>
-          <p class="text-md font-semibold leading-6 text-gray-900">{enrollmentMessage}</p>
-          <div class="mt-6">
-            <div class="rounded-md shadow">
+          <p className="text-md font-semibold leading-6 text-gray-900">{enrollmentMessage}</p>
+          <div className="mt-6">
+            <div className="rounded-md shadow">
               <Link
                 href={link}
-                class="py-2 px-4 block bg-quackred-800 hover:bg-quackred-600 focus:ring-quackred-400 focus:ring-offset-quackred-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
+                className="py-2 px-4 block bg-quackred-800 hover:bg-quackred-600 focus:ring-quackred-400 focus:ring-offset-quackred-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
               >
                 Learn More
               </Link>
