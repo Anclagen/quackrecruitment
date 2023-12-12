@@ -67,7 +67,7 @@ const Footer = () => {
                 { path: "/training/cscs", label: "Construction Skills (CSCS)" },
               ].map((route) => (
                 <li key={route.path}>
-                  <Link href={`sector${route.path}`} className={`${location === route.path ? "underline" : ""} hover:underline hover:text-white text-white text-lg`}>
+                  <Link href={`${route.path}`} className={`${location === route.path ? "underline" : ""} hover:underline hover:text-white text-white text-lg`}>
                     {route.label}
                   </Link>
                 </li>
