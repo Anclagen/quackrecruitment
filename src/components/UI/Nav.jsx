@@ -90,7 +90,10 @@ const Nav = () => {
             <li key={item.label}>
               {item.dropdown ? (
                 <div className="relative">
-                  <button onClick={() => toggleDropdown(item.label)} className="font-medium text-black text-lg p-2 rounded-full flex">
+                  <button
+                    onClick={() => toggleDropdown(item.label)}
+                    className={`${openDropdown === item.label ? "bg-quackred-200" : ""} font-medium text-black text-lg p-2 py-1 rounded-full flex hover:bg-quackred hover:text-white`}
+                  >
                     {item.label}
                     <span className="m-0 rounded-full ps-1 material-symbols-outlined">{openDropdown === item.label ? "expand_more" : "expand_less"}</span>
                   </button>
@@ -113,7 +116,7 @@ const Nav = () => {
                   )}
                 </div>
               ) : (
-                <div className="pt-2">
+                <div className="pt-1">
                   <Link
                     href={item.path}
                     className={`${
@@ -153,12 +156,15 @@ const Nav = () => {
             <li key={item.label}>
               {item.dropdown ? (
                 <div className="relative">
-                  <button onClick={() => toggleDropdown(item.label)} className="font-medium text-black text-lg p-2 rounded-full flex">
+                  <button
+                    onClick={() => toggleDropdown(item.label)}
+                    className={`${openDropdown === item.label ? "bg-quackred-200" : ""} hover:bg-quackred hover:text-white font-medium text-black text-lg p-2 rounded-full flex`}
+                  >
                     {item.label}
                     <span className="material-symbols-outlined">{openDropdown === item.label ? "expand_more" : "expand_less"}</span>
                   </button>
                   {openDropdown === item.label && (
-                    <ul className="">
+                    <ul className="mx-3 border-b-2 border-t-2 mt-1 border-quackred">
                       {item.dropdown.map((dropdownItem) => (
                         <li key={dropdownItem.path} className="my-2">
                           <Link
