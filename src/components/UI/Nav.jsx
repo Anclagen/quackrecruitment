@@ -41,6 +41,7 @@ const Nav = () => {
         { path: "/legal/privacy-policy", label: "Privacy Policy" },
       ],
     },
+    { path: "/contact/register-candidate", label: "Register" },
     { path: "/contact", label: "Contact" },
   ];
 
@@ -128,7 +129,7 @@ const Nav = () => {
           ))}
         </ul>
         {/* Mobile Menu Icon */}
-        <button ref={menuButtonRef} className="lg:hidden text-black mr-2" onClick={() => setMenuOpen(!isMenuOpen)}>
+        <button ref={menuButtonRef} className="lg:hidden text-black mr-1" onClick={() => setMenuOpen(!isMenuOpen)}>
           <i className="material-icons  pointer-events-none pt-1">menu</i>
           <span className="sr-only">Open menu</span>
         </button>
