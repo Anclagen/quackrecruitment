@@ -82,7 +82,11 @@ const recruitmentPages = [
       },
       {
         heading: "Continuous Improvement and Optimization",
-        description: ["Regular assessments and feedback loops for continuous improvement.", "Proactively optimize recruitment strategies to enhance efficiency and effectiveness."],
+        description: [
+          "Regular assessments and feedback loops for continuous improvement.",
+          "Proactively optimize recruitment strategies to enhance efficiency and effectiveness.",
+          "Our on-site managed services are driven by performance metrics and Key Performance Indicators (KPIs). Regular monitoring and analysis of these metrics allow us to identify areas for improvement and implement strategic changes to optimise performance.",
+        ],
       },
       {
         heading: "GLAA Compliant",
