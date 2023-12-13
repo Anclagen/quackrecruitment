@@ -1,7 +1,7 @@
 export const courses = [
   {
-    title: "Level 3 Customer Service & Administration",
-    description: "Unlock the skills needed to excel in administrative roles. Our comprehensive administration training covers:",
+    title: "Level 3 Customer Service & Administration Course For Adults",
+    description: "Unlock the skills needed to excel in administrative roles.",
     openingMessages: [
       "Welcome to Quack Recruitment & Training!",
       "Unlocking Your Potential with Level 3 Customer Service & Administration Training.",
@@ -67,7 +67,7 @@ export const courses = [
   },
   {
     title: "CSCS (Construction Skills Certification Scheme)",
-    description: "Prepare for success in the construction industry through our CSCS training:",
+    description: "Prepare for success in the construction industry through our CSCS training.",
     openingMessages: [
       "Welcome to Quack Recruitment & Training!",
       "Unlocking Your Potential with CSCS Level 3 Training.",
@@ -136,15 +136,65 @@ export const courses = [
   },
 
   {
-    title: "SIA (Security Industry Authority) Training",
-    description: "Become a proficient security professional with our SIA training:",
+    title: "Level 3 SIA Course for Professionals",
+    description: "Become a proficient security professional with our SIA training.",
+    openingMessages: [
+      "Welcome to Quack Recruitment & Training!",
+      "Excel in Security: Level 3 SIA Course for Professionals",
+      "At Quack Recruitment & Training, we understand the critical role that security plays in today's dynamic world.",
+      "Our Level 3 Security Industry Authority (SIA) Course is designed to empower professionals with the knowledge and skills needed to thrive in the security sector. Whether you're looking to kickstart your security career or advance to the next level, our comprehensive training will set you on the path to success.",
+    ],
+    whyChoose: [
+      {
+        title: "Seasoned Instructors",
+        description:
+          "Our team of instructors consists of seasoned security professionals with extensive experience in the industry. They bring real-world insights, ensuring that our training is not only theory-based but also enriched with practical applications and best practices.",
+      },
+      {
+        title: "Rigorous Curriculum",
+        description:
+          "Our Level 3 SIA Course is thoughtfully crafted to cover all facets of security operations. From legal aspects and risk assessment to practical security skills, our curriculum is designed to meet the highest industry standards, providing you with a well-rounded education.",
+      },
+      {
+        title: "Simulated Training Environments",
+        description:
+          "Quack Recruitment & Training is committed to providing a hands-on learning experience. Our training facilities are equipped with simulated environments that replicate real-world security scenarios. This practical approach ensures that you are well-prepared to face the challenges of the security industry.",
+      },
+      {
+        title: "Flexible Learning Solutions",
+        description:
+          "We understand the demanding schedules of working professionals. Our Level 3 SIA Course offers flexible learning options, including evening classes and weekend sessions. This flexibility allows you to balance your professional commitments while investing in your career development.",
+      },
+    ],
     whatYouLearn: [
-      { title: "Security Protocols", description: "Learn the latest security measures and protocols." },
-      { title: "Conflict Resolution", description: "Acquire skills to handle challenging situations peacefully." },
-      { title: "Legal Compliance", description: "Understand the legal aspects of security operations." },
-      { title: "Practical Training", description: "Gain hands-on experience in real-world security scenarios." },
+      {
+        title: "Legal and Ethical Aspects of Security",
+        description: "Understand relevant laws and regulations.",
+        points: ["Understanding relevant laws and regulations.", "Ethical considerations in security operations."],
+      },
+      {
+        title: "Risk Assessment and Management",
+        description: "Identify and analyse security risks.",
+        points: ["Identifying and analysing security risks.", "Implementing effective risk management strategies."],
+      },
+      {
+        title: "Security Operations and Techniques",
+        description: "Develop practical security skills.",
+        points: ["Surveillance and monitoring skills.", "Access control and crowd management."],
+      },
+      {
+        title: "Emergency Response and Crisis Management",
+        description: "Learn to respond to security incidents.",
+        points: ["Responding to security incidents.", "Crisis communication and management."],
+      },
     ],
     enrolmentMessage: "Enroll in our SIA training to step confidently into the security industry with the knowledge and skills you need.",
+    enrolmentMessages: [
+      "Enrol Today and Elevate Your Security Career!",
+      "Quack Recruitment & Training is dedicated to helping you achieve excellence in the security industry. Enrol in our Level 3 SIA Course today and take a significant step toward a rewarding and impactful career in security.",
+      "Don't miss this opportunity to enhance your skills, earn industry-recognized certifications, and open doors to exciting career prospects. Contact us now to learn more about our course details, schedules, and enrolment process.",
+      "Invest in your future with Quack Recruitment & Training - where security meets success!",
+    ],
     price: "£399 + VAT",
     priceInfo: "Either Government Funded T&Cs apply, or £399 + VAT pp, cheaper quotes available for multiple purchases.",
     timeToComplete: "c37/40 hours",
@@ -152,8 +202,8 @@ export const courses = [
     link: "/training/sia",
   },
   {
-    title: "Food and Hygiene Courses",
-    description: "Ensure food safety and hygiene with our specialized courses:",
+    title: "Level 3 Food and Hygiene",
+    description: "Ensure food safety and hygiene with our specialized courses.",
     openingMessages: [
       "Welcome to Quack Recruitment & Training!",
       "Elevate Your Career with Our Level 3 Food and Hygiene Course for Adults",
@@ -183,7 +233,7 @@ export const courses = [
     ],
     whatYouLearn: [
       {
-        title: "Food Safety Regulations and Legislation",
+        title: "Level 3 Food and Hygiene",
         description: "Understand and comply with local and national regulations.",
         points: ["Implementing best practices for food safety.", "Understanding and complying with local and national regulations."],
       },
