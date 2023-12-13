@@ -160,7 +160,7 @@ export const CourseCard = ({ title, description, points = [], price, locations =
         <div className="px-6 py-8 text-center bg-gray-50 lg:p-12 bg-quackred-200">
           <p className=" mb-6">
             <span className="text-base font-medium leading-6 text-gray-700">Starting from </span>
-            <span className="text-lg font-semibold leading-none text-gray-900">${price}</span>
+            <span className="text-lg font-semibold leading-none text-gray-900">{price}</span>
           </p>
           <p className="text-md font-semibold leading-6 text-gray-900">{enrollmentMessage}</p>
           <div className="mt-6">
