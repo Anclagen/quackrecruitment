@@ -330,38 +330,68 @@ export const courses = [
     locations: ["Walsall", "Birmingham", "Northampton", "Luton"],
     link: "/training/forklift-truck",
   },
+  {
+    title: "Level 3 Welding Course for Skilled Professionals",
+    description: "Master the art of welding with our Level 3 Welding Course.",
+    openingMessages: [
+      "Welcome to Quack Recruitment & Training!",
+      "Forge Your Future: Level 3 Welding Course for Skilled Professionals",
+      "At Quack Recruitment & Training, we understand the importance of mastering the art of welding in today's industrial landscape. Our Level 3 Welding Course is meticulously designed to provide skilled professionals with the advanced knowledge and hands-on expertise required to excel in the field of welding.",
+    ],
+    whyChoose: [
+      {
+        title: "Expert Instructors",
+        description:
+          "Our team of instructors comprises seasoned welding professionals with extensive experience in various welding techniques. They are dedicated to providing comprehensive training that not only meets industry standards but also prepares you for the practical challenges of the welding profession.",
+      },
+      {
+        title: "Comprehensive Curriculum",
+        description:
+          "Our Level 3 Welding Course covers a diverse range of welding techniques, materials, and applications. From the fundamentals of welding safety to advanced welding procedures, our curriculum is designed to enhance your skills and make you proficient in various welding disciplines.",
+      },
+      {
+        title: "Cutting-Edge Welding Facilities",
+        description:
+          "Quack Recruitment & Training is committed to offering a cutting-edge learning environment. Our training facilities are equipped with state-of-the-art welding equipment and practical training areas, ensuring that you gain hands-on experience with the latest tools and techniques.",
+      },
+      {
+        title: "Flexible Learning Options",
+        description:
+          "We recognise that professionals often have busy schedules. That's why we provide flexible learning options, including evening classes and weekend sessions. This flexibility allows you to advance your welding skills without compromising your current commitments.",
+      },
+    ],
+    whatYouLearn: [
+      {
+        title: "Welding Safety and Regulations",
+        description: "Understand and implement safety protocols.",
+        points: ["Understanding and implementing safety protocols.", "Adhering to industry regulations to ensure a secure working environment."],
+      },
+      {
+        title: "Advanced Welding Techniques",
+        description: "Mastery of various welding processes (MIG, TIG, Stick, etc.).",
+        points: ["Mastery of various welding processes (MIG, TIG, Stick, etc.).", "Advanced welding applications for diverse materials."],
+      },
+      {
+        title: "Welding Inspection and Quality Assurance",
+        description: "Conduct visual and non-destructive testing.",
+        points: ["Conducting visual and non-destructive testing.", "Implementing quality assurance measures in welding projects."],
+      },
+      {
+        title: "Welding Project Management",
+        description: "Plan and execute welding projects.",
+        points: ["Planning and executing welding projects.", "Managing resources and timelines for successful project completion."],
+      },
+    ],
+    enrolmentMessage: "Enrol Today and Ignite Your Welding Career!",
+    enrolmentMessages: [
+      "Quack Recruitment & Training is dedicated to helping skilled professionals elevate their welding expertise. Enrol in our Level 3 Welding Course today and take a significant step toward a rewarding and fulfilling career in welding.",
+      "Don't miss this opportunity to refine your skills, earn industry-recognised certifications, and open doors to exciting career prospects. Contact us now to learn more about our course details, schedules, and enrolment process.",
+      "Invest in your future with Quack Recruitment & Training - where welding excellence meets success!",
+    ],
+    price: "£399 + VAT",
+    priceInfo: "Either Government Funded T&Cs apply, or £399 + VAT pp, cheaper quotes available for multiple purchases.",
+    timeToComplete: "c37/40 hours",
+    locations: ["Walsall", "Birmingham", "Northampton", "Luton"],
+    link: "/training/welding",
+  },
 ];
-
-// Welcome to Quack Recruitment & Training!
-// Empowering Your Career: Level 3 Forklift Truck (FLT) Course
-// Quack Recruitment & Training is your gateway to excellence in operating forklift trucks. Our Level 3 Forklift Truck Course is meticulously designed to equip you with the knowledge and skills necessary to navigate the world of material handling and contribute to the efficient operation of warehouses and logistics centres.
-// Why Choose Quack Recruitment & Training?
-// Industry-Experienced Instructors
-// Our team of instructors comprises seasoned professionals with extensive experience in forklift operations. They bring a wealth of practical knowledge to the classroom, ensuring that your training is not just theoretical but also grounded in real-world applications.
-// Comprehensive Curriculum
-// Our Level 3 FLT Course covers a wide range of topics essential for mastering forklift operations. From the fundamentals of forklift safety to advanced handling techniques, our curriculum is structured to meet industry standards and equip you for success.
-// State-of-the-Art Training Facilities
-// Quack Recruitment & Training is committed to providing a conducive learning environment. Our training facilities are equipped with state-of-the-art forklift simulators and practical training areas to ensure that you receive hands-on experience in a safe and controlled setting.
-// Flexible Learning Options
-// Recognizing the diverse needs of adult learners, we offer flexible learning options, including evening classes and weekend sessions. This flexibility allows you to pursue your forklift training without compromising your existing commitments.
-// [14:39]
-// What You Will Learn
-// Our Level 3 Forklift Truck Course covers a comprehensive range of topics crucial for success in forklift operations:
-// Forklift Safety and Regulations:
-
-// o    Understanding safety protocols and regulations.
-// o    Implementing best practices to ensure a secure working environment.
-// o    Forklift Operation Techniques
-// o    Basic and advanced forklift manoeuvres.
-// o    Load handling and stacking techniques.
-// o    Maintenance and Inspection
-// o    Conducting pre-operational checks.
-// o    Performing routine maintenance to ensure forklift reliability.
-// o    Risk Assessment and Emergency Response
-// o    Identifying and mitigating potential risks.
-// o    Responding effectively to emergencies and operational challenges.
-
-// Enrol Today and Elevate Your Forklift Operation Skills!
-// Quack Recruitment & Training is dedicated to helping you achieve excellence in forklift operations. Enrol in our Level 3 FLT Course today and embark on a journey toward a rewarding career in material handling.
-// Don't miss this opportunity to enhance your skills, gain industry-recognised certifications, and open doors to exciting career prospects. Contact us now to learn more about our course details, schedules, and enrolment process.
-// Invest in your future with Quack Recruitment & Training - where forklift expertise meets success!
