@@ -266,4 +266,102 @@ export const courses = [
     locations: ["Walsall", "Birmingham", "Northampton", "Luton"],
     link: "/training/food-and-hygiene",
   },
+  {
+    title: "Level 3 Forklift Truck (FLT) Course",
+    description: "Master the art of forklift operation with our Level 3 FLT Course.",
+    openingMessages: [
+      "Welcome to Quack Recruitment & Training!",
+      "Empowering Your Career: Level 3 Forklift Truck (FLT) Course",
+      "Quack Recruitment & Training is your gateway to excellence in operating forklift trucks. Our Level 3 Forklift Truck Course is meticulously designed to equip you with the knowledge and skills necessary to navigate the world of material handling and contribute to the efficient operation of warehouses and logistics centres.",
+    ],
+    whyChoose: [
+      {
+        title: "Industry-Experienced Instructors",
+        description:
+          "Our team of instructors comprises seasoned professionals with extensive experience in forklift operations. They bring a wealth of practical knowledge to the classroom, ensuring that your training is not just theoretical but also grounded in real-world applications.",
+      },
+      {
+        title: "Comprehensive Curriculum",
+        description:
+          "Our Level 3 FLT Course covers a wide range of topics essential for mastering forklift operations. From the fundamentals of forklift safety to advanced handling techniques, our curriculum is structured to meet industry standards and equip you for success.",
+      },
+      {
+        title: "State-of-the-Art Training Facilities",
+        description:
+          "Quack Recruitment & Training is committed to providing a conducive learning environment. Our training facilities are equipped with state-of-the-art forklift simulators and practical training areas to ensure that you receive hands-on experience in a safe and controlled setting.",
+      },
+      {
+        title: "Flexible Learning Options",
+        description:
+          "Recognizing the diverse needs of adult learners, we offer flexible learning options, including evening classes and weekend sessions. This flexibility allows you to pursue your forklift training without compromising your existing commitments.",
+      },
+    ],
+    whatYouLearn: [
+      {
+        title: "Forklift Safety and Regulations",
+        description: "Understand safety protocols and regulations.",
+        points: ["Understanding safety protocols and regulations.", "Implementing best practices to ensure a secure working environment."],
+      },
+      {
+        title: "Forklift Operation Techniques",
+        description: "Learn basic and advanced forklift manoeuvres.",
+        points: ["Basic and advanced forklift manoeuvres.", "Load handling and stacking techniques."],
+      },
+      {
+        title: "Maintenance and Inspection",
+        description: "Conduct pre-operational checks and routine maintenance.",
+        points: ["Conducting pre-operational checks.", "Performing routine maintenance to ensure forklift reliability."],
+      },
+      {
+        title: "Risk Assessment and Emergency Response",
+        description: "Identify and mitigate potential risks.",
+        points: ["Identifying and mitigating potential risks.", "Responding effectively to emergencies and operational challenges."],
+      },
+    ],
+    enrolmentMessage: "Enrol Today and Elevate Your Forklift Operation Skills!",
+    enrolmentMessages: [
+      "Quack Recruitment & Training is dedicated to helping you achieve excellence in forklift operations. Enrol in our Level 3 FLT Course today and embark on a journey toward a rewarding career in material handling.",
+      "Don't miss this opportunity to enhance your skills, gain industry-recognised certifications, and open doors to exciting career prospects. Contact us now to learn more about our course details, schedules, and enrolment process.",
+      "Invest in your future with Quack Recruitment & Training - where forklift expertise meets success!",
+    ],
+    price: "£399 + VAT",
+    priceInfo: "Either Government Funded T&Cs apply, or £399 + VAT pp, cheaper quotes available for multiple purchases.",
+    timeToComplete: "c37/40 hours",
+    locations: ["Walsall", "Birmingham", "Northampton", "Luton"],
+    link: "/training/forklift-truck",
+  },
 ];
+
+// Welcome to Quack Recruitment & Training!
+// Empowering Your Career: Level 3 Forklift Truck (FLT) Course
+// Quack Recruitment & Training is your gateway to excellence in operating forklift trucks. Our Level 3 Forklift Truck Course is meticulously designed to equip you with the knowledge and skills necessary to navigate the world of material handling and contribute to the efficient operation of warehouses and logistics centres.
+// Why Choose Quack Recruitment & Training?
+// Industry-Experienced Instructors
+// Our team of instructors comprises seasoned professionals with extensive experience in forklift operations. They bring a wealth of practical knowledge to the classroom, ensuring that your training is not just theoretical but also grounded in real-world applications.
+// Comprehensive Curriculum
+// Our Level 3 FLT Course covers a wide range of topics essential for mastering forklift operations. From the fundamentals of forklift safety to advanced handling techniques, our curriculum is structured to meet industry standards and equip you for success.
+// State-of-the-Art Training Facilities
+// Quack Recruitment & Training is committed to providing a conducive learning environment. Our training facilities are equipped with state-of-the-art forklift simulators and practical training areas to ensure that you receive hands-on experience in a safe and controlled setting.
+// Flexible Learning Options
+// Recognizing the diverse needs of adult learners, we offer flexible learning options, including evening classes and weekend sessions. This flexibility allows you to pursue your forklift training without compromising your existing commitments.
+// [14:39]
+// What You Will Learn
+// Our Level 3 Forklift Truck Course covers a comprehensive range of topics crucial for success in forklift operations:
+// Forklift Safety and Regulations:
+
+// o    Understanding safety protocols and regulations.
+// o    Implementing best practices to ensure a secure working environment.
+// o    Forklift Operation Techniques
+// o    Basic and advanced forklift manoeuvres.
+// o    Load handling and stacking techniques.
+// o    Maintenance and Inspection
+// o    Conducting pre-operational checks.
+// o    Performing routine maintenance to ensure forklift reliability.
+// o    Risk Assessment and Emergency Response
+// o    Identifying and mitigating potential risks.
+// o    Responding effectively to emergencies and operational challenges.
+
+// Enrol Today and Elevate Your Forklift Operation Skills!
+// Quack Recruitment & Training is dedicated to helping you achieve excellence in forklift operations. Enrol in our Level 3 FLT Course today and embark on a journey toward a rewarding career in material handling.
+// Don't miss this opportunity to enhance your skills, gain industry-recognised certifications, and open doors to exciting career prospects. Contact us now to learn more about our course details, schedules, and enrolment process.
+// Invest in your future with Quack Recruitment & Training - where forklift expertise meets success!
