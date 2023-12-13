@@ -84,6 +84,20 @@ const recruitmentPages = [
         heading: "Continuous Improvement and Optimization",
         description: ["Regular assessments and feedback loops for continuous improvement.", "Proactively optimize recruitment strategies to enhance efficiency and effectiveness."],
       },
+      {
+        heading: "GLAA Compliant",
+        description: [
+          "We adhere to the highest standards of ethical recruitment practices as outlined by the GLAA. Our commitment to transparency, fairness, and integrity ensures that all workers are treated with dignity and respect.",
+          "Our obligations with being GLAA compliance doesn't end with recruitment. We provide ongoing monitoring and support to ensure that your workforce remains compliant with GLAA regulations throughout their tenure.",
+        ],
+      },
+      {
+        heading: "TUPE Compliance",
+        description: [
+          "We ensures full compliance with TUPE regulations, and provide legal expertise to navigate the complexities of TUPE, including employee rights, information, and consultation processes, guaranteeing that your business remains within the bounds of the law.",
+          "We manage the entire transition process to minimise disruption to your operations. Our goal is to ensure that the transfer of employees is conducted in a manner that is fair, legally sound, and aligned with your business objectives.",
+        ],
+      },
     ],
   },
 ];
