@@ -19,7 +19,7 @@ const FourImageFeature = ({ title, details, linkDetails, images }) => {
             <ul className="gap-6 mt-8">
               {linkDetails.map((linkDetail, i) => (
                 <li key={i} className={`mt-6 lg:mt-0 text-lg ${linkDetail.color}`}>
-                  <Link href={`sector/${linkDetail.slug}`} className="flex mb-3">
+                  <Link prefetch={false} href={`sector/${linkDetail.slug}`} className="flex mb-3">
                     <span className="ml-4 font-medium leading-6 font-semibold hover:underline">{linkDetail.name}</span>
                     <span className="flex items-center justify-center flex-shrink-0 w-6 h-6 rounded-full ps-3 !no-underline">
                       <span className="material-symbols-outlined">arrow_circle_right</span>

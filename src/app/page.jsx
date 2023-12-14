@@ -56,6 +56,7 @@ const Home = () => {
             <p className="mt-4 text-lg leading-6 italic">Discover the Quack difference.</p>
             <div className="text-center my-10">
               <Link
+                prefetch={false}
                 className="py-4 px-6  bg-quackred-900 hover:bg-quackred-600 focus:ring-quackred-500 focus:ring-offset-quackred-200 text-white w-full transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
                 href="/about"
               >

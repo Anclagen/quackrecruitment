@@ -78,7 +78,7 @@ const Nav = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div>
-          <Link className="flex flex-row" href="/" title="home">
+          <Link prefetch={false} className="flex flex-row" href="/" title="home">
             <img src="/logos/temp-logo-rt.png" alt="Logo" className="h-12" />
             <div className="flex flex-col ml-3 text-black text-xl font-medium">
               <span>Quack</span>
@@ -104,6 +104,7 @@ const Nav = () => {
                       {item.dropdown.map((dropdownItem) => (
                         <li key={dropdownItem.path} className="p-2">
                           <Link
+                            prefetch={false}
                             href={dropdownItem.path}
                             className={`${
                               location === dropdownItem.path ? "bg-quackred text-white hover:bg-quackred-700" : ""
@@ -120,6 +121,7 @@ const Nav = () => {
               ) : (
                 <div className="pt-1">
                   <Link
+                    prefetch={false}
                     href={item.path}
                     className={`${
                       location === item.path ? "bg-quackred text-white hover:bg-quackred-700" : ""
@@ -170,6 +172,7 @@ const Nav = () => {
                       {item.dropdown.map((dropdownItem) => (
                         <li key={dropdownItem.path} className="my-2">
                           <Link
+                            prefetch={false}
                             href={dropdownItem.path}
                             className={`${
                               location === dropdownItem.path ? "bg-quackred  hover:bg-quackred-700" : ""
@@ -185,6 +188,7 @@ const Nav = () => {
                 </div>
               ) : (
                 <Link
+                  prefetch={false}
                   href={item.path}
                   className={`${
                     location === item.path ? "bg-quackred text-white hover:bg-quackred-700" : ""

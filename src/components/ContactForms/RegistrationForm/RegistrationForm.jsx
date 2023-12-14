@@ -177,7 +177,7 @@ const RegistrationForm = () => {
                         <>
                           <div className="error error-message">
                             {formErrors} If problem persist please submit your details to using the provided{" "}
-                            <Link target="_blank" href={"/contact/candidate-registration/fallback"} className="text-quackred-950 font-semibold">
+                            <Link prefetch={false} target="_blank" href={"/contact/candidate-registration/fallback"} className="text-quackred-950 font-semibold">
                               email template here.
                             </Link>
                           </div>

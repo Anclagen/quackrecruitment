@@ -32,7 +32,7 @@ const Footer = () => {
                 { path: "/legal/privacy-policy", label: "Privacy Policy" },
               ].map((route) => (
                 <li key={route.path}>
-                  <Link href={`${route.path}`} className={`${location === route.path ? "underline" : ""} hover:underline hover:text-white text-white text-lg`}>
+                  <Link prefetch={false} href={`${route.path}`} className={`${location === route.path ? "underline" : ""} hover:underline hover:text-white text-white text-lg`}>
                     {route.label}
                   </Link>
                 </li>
@@ -50,7 +50,7 @@ const Footer = () => {
                 { path: "/recruitment/on-site-managed", label: "On-Site Managed Services" },
               ].map((route) => (
                 <li key={route.path}>
-                  <Link href={route.path} className={`${location === route.path ? "underline" : ""} hover:underline hover:text-white text-white text-lg`}>
+                  <Link prefetch={false} href={route.path} className={`${location === route.path ? "underline" : ""} hover:underline hover:text-white text-white text-lg`}>
                     {route.label}
                   </Link>
                 </li>
@@ -68,7 +68,7 @@ const Footer = () => {
                 { path: "/training/cscs", label: "Construction Skills (CSCS)" },
               ].map((route) => (
                 <li key={route.path}>
-                  <Link href={`${route.path}`} className={`${location === route.path ? "underline" : ""} hover:underline hover:text-white text-white text-lg`}>
+                  <Link prefetch={false} href={`${route.path}`} className={`${location === route.path ? "underline" : ""} hover:underline hover:text-white text-white text-lg`}>
                     {route.label}
                   </Link>
                 </li>
@@ -99,7 +99,7 @@ const Footer = () => {
           <div className="flex flex-col mb-8">
             <img src="/logos/quack-group-horizonal-full-logo-white.png" alt="Quack Group Full Logo" className="my-3 w-full sm:w-80 md:w-96 mx-auto" />
             <div className="flex flex-row justify-center max-w-screen-lg mx-auto gap-12 mt-8">
-              <Link href="/" className="flex flex-row">
+              <Link prefetch={false} href="/" className="flex flex-row">
                 <img src="/logos/temp-logo-rt.png" alt="Logo" className="h-16" />
                 <div className="flex flex-col ml-3 text-white text-xl font-medium">
                   <span>Quack</span>

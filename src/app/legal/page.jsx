@@ -34,6 +34,7 @@ const Legal = () => {
             <li>Professional Indemnity = £10m </li>
           </ul>
           <Link
+            prefetch={false}
             rel="noopener noreferrer"
             href="/legal/privacy-policy"
             className={`mt-6 py-4 px-6 focus:ring-quackred-500 focus:ring-offset-quackred-200 text-white transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg mx-auto bg-quackred-900 hover:bg-quackred-600 hover:text-white text-white py-2 px-5 font-semibold rounded w-fit flex`}

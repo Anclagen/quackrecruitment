@@ -38,6 +38,7 @@ const Recruitment = () => {
                 with precision and agility.
               </p>
               <Link
+                prefetch={false}
                 href="/recruitment/on-site-managed"
                 className="mt-6 py-2 px-4 block bg-quackred-800 hover:bg-quackred-600 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
               >
@@ -50,6 +51,7 @@ const Recruitment = () => {
                 {`Elevate your workforce with Quack Recruitment & Training's Temporary Recruitment Services. Experience unparalleled flexibility with our customized staffing solutions, tailored to meet project demands and adapt to workload fluctuations. Benefit from swift placements, industry-specific expertise, and cost-effective workforce management, ensuring efficiency and quality in every hire.`}
               </p>
               <Link
+                prefetch={false}
                 href="/recruitment/temporary"
                 className="py-2 px-4 block bg-quackred-800 hover:bg-quackred-600 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg  mt-6"
               >
@@ -64,6 +66,7 @@ const Recruitment = () => {
                 }
               </p>
               <Link
+                prefetch={false}
                 href="/recruitment/permanent"
                 className="py-2 px-4 block bg-quackred-800 hover:bg-quackred-600 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg mt-6"
               >
