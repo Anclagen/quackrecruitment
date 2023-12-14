@@ -1,5 +1,6 @@
 import Section from "@/components/Sections/Section";
 import ExpandableSection from "@/components/ExpandableSection/ExpandableSection";
+import BannerHalf from "@/components/Banner/BannerHalf";
 
 export const metadata = {
   title: "Privacy Policy | Quack Recruitment & Training",
@@ -13,8 +14,8 @@ const PrivacyPolicy = () => {
     <>
       <div className="hidden bg-teal-900 bg-gray-900 bg-sky-900 bg-indigo-900 bg-red-900 bg-blue-900 bg-green-900 bg-sky-400 text-teal-900 text-gray-900 text-sky-900 text-indigo-900 text-red-900 text-blue-900 text-green-900 text-sky-400"></div>
       <main>
+        <BannerHalf title="Privacy Policy" slogan="Need to get in touch with us?" imgSrc="/images/banners/privacy-banner.jpg" imgAlt="Privacy Policy" position="top" />
         <Section bgColor="bg-zinc-200">
-          <h1 className="text-2xl font-bold leading-8 text-black sm:text-3xl sm:leading-9 text-center mb-10">Privacy Policy</h1>
           <div className="mx-auto max-w-screen-md bg-zinc-50 p-3 px-3 sm:px-10 mb-5">
             <p className="my-2 italic">{"Quack Group Ltd – GDPR & Privacy Policy 2023"}</p>
 
