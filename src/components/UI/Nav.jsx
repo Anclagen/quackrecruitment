@@ -43,7 +43,7 @@ const Nav = () => {
         { path: "/legal/privacy-policy", label: "Privacy Policy" },
       ],
     },
-    { path: "/contact/register-candidate", label: "Register" },
+    { path: "/contact/register", label: "Register" },
     { path: "/contact", label: "Contact" },
   ];
 

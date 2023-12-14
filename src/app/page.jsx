@@ -100,7 +100,7 @@ const Home = () => {
             titlePurple="Discover roles that resonate with your expertise."
             text="Let us guide you towards a career that aligns with your skills and passions."
             linkText="Register Today"
-            linkHref="/contact/register-candidate"
+            linkHref="/contact/register"
             image="/images/tools.png"
             reverse={true}
           />

@@ -8,7 +8,7 @@ import ErrorBoundary from "../ErrorBoundary";
 import Stepper from "../../Formik/Stepper";
 import Link from "next/link";
 
-const CandidateRegistrationForm = () => {
+const RegistrationForm = () => {
   const [activeSection, setActiveSection] = useState(0);
   // Manually managing file uploads as Formik isn't playing nice
   const [fileUploads, setFileUploads] = useState(uploadInitialState);
@@ -52,22 +52,6 @@ const CandidateRegistrationForm = () => {
           formData.append(key, fileUploads[key]);
         }
       }
-
-      // formData.append("proof-of-address", fileUploads["proof-of-address"]);
-      // formData.append("proof-passport", fileUploads["proof-passport"]);
-      // formData.append("proof-birth-certificate", fileUploads["proof-birth-certificate"]);
-
-      // formData.append("proof-ni-number", fileUploads["proof-ni-number"]);
-      // formData.append("proof-share-code", fileUploads["proof-share-code"]);
-      // formData.append("proof-indefinite-leave", fileUploads["proof-indefinite-leave"]);
-
-      // if (fileUploads["proof-student-term-time"]) {
-      //   formData.append("proof-student-term-time", fileUploads["proof-student-term-time"]);
-      // }
-
-      // if (fileUploads["proof-visa"]) {
-      //   formData.append("proof-visa", fileUploads["proof-visa"]);
-      // }
 
       // cf7 dev=16
       const response = await fetch("https://content.quackspecialists.co.uk/wp-json/contact-form-7/v1/contact-forms/16/feedback", {
@@ -233,4 +217,4 @@ const CandidateRegistrationForm = () => {
   );
 };
 
-export default CandidateRegistrationForm;
+export default RegistrationForm;
