@@ -4,14 +4,14 @@ import { courses } from "@/components/data/training/courses";
 import TrainingCourse from "@/components/templates/TrainingCourse";
 
 export const metadata = {
-  title: `${courses[2].title} | Quack Recruitment & Training`,
-  description: `${courses[2].description}`,
+  title: `${courses[4].title} | Quack Recruitment & Training`,
+  description: `${courses[4].description}`,
   keywords: ["Quack Recruitment & Training", "Training", "CSCS", "Construction Skills Certification Scheme"],
   authors: [{ name: "Alexander Barrett", url: "https://github.com/Anclagen" }],
 };
 
-const SIAPage = () => {
-  const course = courses[2];
+const FLTPage = () => {
+  const course = courses[4];
 
   return (
     <>
@@ -23,4 +23,4 @@ const SIAPage = () => {
   );
 };
 
-export default SIAPage;
+export default FLTPage;

@@ -1,6 +1,10 @@
 export const courses = [
   {
     title: "Level 3 Customer Service & Administration Course For Adults",
+    banner: "Customer Service & Administration",
+    bannerImage: "/images/banners/admin-banner.jpg",
+    bannerPosition: "center",
+    bannerImageAlt: "Woman sitting at a reception desk.",
     description: "Unlock the skills needed to excel in administrative roles.",
     openingMessages: [
       "Welcome to Quack Recruitment & Training!",
@@ -67,6 +71,10 @@ export const courses = [
   },
   {
     title: "CSCS (Construction Skills Certification Scheme)",
+    banner: "CSCS",
+    bannerImage: "/images/banners/construction-banner.jpg",
+    bannerPosition: "center",
+    bannerImageAlt: "workers on road construction site.",
     description: "Prepare for success in the construction industry through our CSCS training.",
     openingMessages: [
       "Welcome to Quack Recruitment & Training!",
@@ -137,6 +145,10 @@ export const courses = [
 
   {
     title: "Level 3 SIA Course for Professionals",
+    banner: "SIA",
+    bannerImage: "/images/banners/sia-banner.jpg",
+    bannerPosition: "top",
+    bannerImageAlt: "Security cameras on a wall.",
     description: "Become a proficient security professional with our SIA training.",
     openingMessages: [
       "Welcome to Quack Recruitment & Training!",
@@ -203,6 +215,10 @@ export const courses = [
   },
   {
     title: "Level 3 Food and Hygiene",
+    banner: "Food and Hygiene",
+    bannerImage: "/images/banners/food-hygiene-banner.jpg",
+    bannerPosition: "top",
+    bannerImageAlt: "Person wearing gloves cutting meat.",
     description: "Ensure food safety and hygiene with our specialized courses.",
     openingMessages: [
       "Welcome to Quack Recruitment & Training!",
@@ -268,6 +284,10 @@ export const courses = [
   },
   {
     title: "Level 3 Forklift Truck (FLT) Course",
+    banner: "Forklift Truck (FLT)",
+    bannerImage: "/images/banners/forklift-banner.jpg",
+    bannerPosition: "top",
+    bannerImageAlt: "Person driving forklift ina a warehouse.",
     description: "Master the art of forklift operation with our Level 3 FLT Course.",
     openingMessages: [
       "Welcome to Quack Recruitment & Training!",
@@ -328,10 +348,13 @@ export const courses = [
     priceInfo: "Either Government Funded T&Cs apply, or £399 + VAT pp, cheaper quotes available for multiple purchases.",
     timeToComplete: "c37/40 hours",
     locations: ["Walsall", "Birmingham", "Northampton", "Luton"],
-    link: "/training/forklift-truck",
+    link: "/training/fork-lift",
   },
   {
     title: "Level 3 Welding Course for Skilled Professionals",
+    banner: "Welding",
+    bannerImage: "/images/banners/welding-banner.jpg",
+    bannerImageAlt: "Person welding.",
     description: "Master the art of welding with our Level 3 Welding Course.",
     openingMessages: [
       "Welcome to Quack Recruitment & Training!",

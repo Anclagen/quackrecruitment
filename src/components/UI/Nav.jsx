@@ -21,6 +21,8 @@ const Nav = () => {
         { path: "/training/customer-service-administration", label: "Customer Service & Administration" },
         { path: "/training/food-and-hygiene", label: "Food & Hygiene" },
         { path: "/training/sia", label: "SIA" },
+        { path: "/training/welding", label: "Welding" },
+        { path: "/training/fork-lift", label: "Forklift Truck (FLT)" },
       ],
     },
     {
