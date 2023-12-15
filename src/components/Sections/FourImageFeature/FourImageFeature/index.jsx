@@ -1,6 +1,6 @@
 "use client";
 import PropTypes from "prop-types";
-import { sectors } from "../../data/sectors.js";
+import { sectors } from "../../../data/sectors.js";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link.js";
 const FourImageFeature = ({ title, details, linkDetails, images }) => {

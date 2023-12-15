@@ -28,10 +28,10 @@ const About = () => {
           reverse={false}
           dark={false}
           images={[
-            { src: "images/pexels-yan-krukau-8867265.jpg", alt: "Office workers at their desks" },
-            { src: "images/pexels-yan-krukau-8866793.jpg", alt: "Team photo in the office" },
-            { src: "images/pexels-mart-production-7709219.jpg", alt: "Office workers at their desks" },
-            { src: "images/pexels-yan-krukau-8867482.jpg", alt: "another team photo in the office" },
+            { src: "/images/pexels-yan-krukau-8867265.jpg", alt: "Office workers at their desks" },
+            { src: "/images/pexels-yan-krukau-8866793.jpg", alt: "Team photo in the office" },
+            { src: "/images/pexels-mart-production-7709219.jpg", alt: "Office workers at their desks" },
+            { src: "/images/pexels-yan-krukau-8867482.jpg", alt: "another team photo in the office" },
           ]}
         >
           <div className="px-6 lg:p-0">
