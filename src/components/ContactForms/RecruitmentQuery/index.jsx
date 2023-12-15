@@ -25,7 +25,7 @@ const RecruitmentQuery = () => {
         formData.append(key, values[key]);
       }
 
-      const response = await fetch("https://content.quackspecialists.co.uk/wp-json/contact-form-7/v1/contact-forms/20/feedback", {
+      const response = await fetch("https://content.quackrecruitmentandtraining.co.uk/wp-json/contact-form-7/v1/contact-forms/10/feedback", {
         method: "POST",
         body: formData,
       });
