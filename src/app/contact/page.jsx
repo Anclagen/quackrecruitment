@@ -1,6 +1,6 @@
 import BannerHalf from "@/components/Banner/BannerHalf";
 import Section from "@/components/Sections/Section";
-import GeneralContactForm from "@/components/ContactForms/GeneralContactForm/GeneralContactForm";
+import GeneralContactForm from "@/components/ContactForms/GeneralContactForm";
 import { quackRecruitmentLocations } from "@/components/data/locations";
 import ExpandableSectionFAQ from "@/components/ExpandableSection/ExpandableSectionFAQ";
 

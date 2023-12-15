@@ -1,5 +1,5 @@
 "use client";
-import PageLink from "../PageLink";
+import PageLink from "../../PageLink";
 
 const BannerHome = ({ title, slogan, imgSrc, imgAlt, links = [] }) => {
   return (

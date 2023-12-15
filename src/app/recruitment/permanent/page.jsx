@@ -1,8 +1,8 @@
 import BannerHalf from "@/components/Banner/BannerHalf";
 import Section from "@/components/Sections/Section";
-import RecruitmentQuery from "@/components/ContactForms/RecruitmentQuery/RecruitmentQuery";
+import RecruitmentQuery from "@/components/ContactForms/RecruitmentQuery";
 import recruitmentPages from "@/components/data/recruitment/recruitmentPages";
-import OurServices from "@/components/OurServices";
+import OurServices from "@/components/templates/recruitment/OurServices";
 import FAQSection from "@/components/Sections/FAQSection";
 import { permanentFAQ } from "@/components/data/recruitment/recruitmentFAQ";
 
@@ -18,7 +18,13 @@ const PermanentRecruitment = () => {
     <>
       <div className="hidden bg-teal-900 bg-gray-900 bg-sky-900 bg-indigo-900 bg-red-900 bg-blue-900 bg-green-900 bg-sky-400 text-teal-900 text-gray-900 text-sky-900 text-indigo-900 text-red-900 text-blue-900 text-green-900 text-sky-400"></div>
       <main>
-        <BannerHalf title="Permanent Recruitment" slogan="Secure Top Talent with Quack Recruitment." imgSrc="images/banners/pexels-pixabay-162553.jpg" imgAlt="Descriptive Image Alt Text" links={[]} />
+        <BannerHalf
+          title="Permanent Recruitment"
+          slogan="Secure Top Talent with Quack Recruitment."
+          imgSrc="/images/banners/pexels-pixabay-162553.jpg"
+          imgAlt="Descriptive Image Alt Text"
+          links={[]}
+        />
         <Section bgColor="bg-zinc-200">
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Why Choose Us</h2>

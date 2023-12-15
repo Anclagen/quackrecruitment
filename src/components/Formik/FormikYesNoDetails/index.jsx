@@ -1,5 +1,5 @@
 import { Field, useField } from "formik";
-import FormikField from "./FormikField"; // Assuming FormikField is in the same directory
+import FormikField from "../FormikFeild"; // Assuming FormikField is in the same directory
 
 function FormikYesNoDetails({ name, question, detailsLabel, placeholder = "" }) {
   const [field] = useField(name);

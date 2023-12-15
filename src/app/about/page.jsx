@@ -18,7 +18,7 @@ const About = () => {
       <BannerHalf
         title="About"
         slogan="A Dedicated & Experienced Team Of Experts"
-        imgSrc="images/banners/pexels-yan-krukau-7691705.jpg"
+        imgSrc="/images/banners/pexels-yan-krukau-7691705.jpg"
         imgAlt="Group opf people looking at a computer"
         position="top"
       />

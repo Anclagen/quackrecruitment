@@ -1,11 +1,9 @@
-import BannerHome from "@/components/Banner/BannerHome";
 import BannerHalf from "@/components/Banner/BannerHalf";
 import Section from "@/components/Sections/Section";
 import FAQSection from "@/components/Sections/FAQSection";
 import FadeInFreeTextSection from "@/components/Sections/FadeInFreeFormatSection";
 import Link from "next/link";
 import Flipper from "@/components/Sections/Flipper";
-import PageLink from "@/components/PageLink";
 
 export const metadata = {
   title: "Recruitment | Quack Recruitment & Training",
@@ -19,7 +17,7 @@ const Recruitment = () => {
     <>
       <div className="hidden bg-teal-900 bg-gray-900 bg-sky-900 bg-indigo-900 bg-red-900 bg-blue-900 bg-green-900 bg-sky-400 text-teal-900 text-gray-900 text-sky-900 text-indigo-900 text-red-900 text-blue-900 text-green-900 text-sky-400"></div>
       <main>
-        <BannerHalf title="Recruitment" slogan="Turn Passion into Profession." imgSrc="images/banners/pexels-pixabay-162553.jpg" imgAlt="Descriptive Image Alt Text" links={[]} />
+        <BannerHalf title="Recruitment" slogan="Turn Passion into Profession." imgSrc="/images/banners/pexels-pixabay-162553.jpg" imgAlt="Descriptive Image Alt Text" links={[]} />
         <Section bgColor="bg-zinc-200">
           <FadeInFreeTextSection title="Our Comprehensive Recruitment Solutions" imageSrc="/images/interview-1.jpg" imageAlt="Description">
             <p className="mt-4 text-lg leading-6 max-w-screen-sm mx-auto">

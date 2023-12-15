@@ -1,4 +1,4 @@
-import FormikField from "../../../Formik/FormikField";
+import FormikField from "../../../Formik/FormikFeild";
 
 const BankDetails = () => (
   <div className="flex flex-col">

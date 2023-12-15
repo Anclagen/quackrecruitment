@@ -14,7 +14,7 @@ export const metadata = {
 function Training() {
   return (
     <>
-      <BannerHalf title="Training" slogan="Skill Up, Stand Out!" imgSrc="images/banners/training-banner.jpg" imgAlt="Descriptive Image Alt Text" position="center" />
+      <BannerHalf title="Training" slogan="Skill Up, Stand Out!" imgSrc="/images/banners/training-banner.jpg" imgAlt="Descriptive Image Alt Text" position="center" />
       <Section bgColor="bg-white">
         <DetailsSection
           title={"We empower adults with essential skills through comprehensive training courses."}

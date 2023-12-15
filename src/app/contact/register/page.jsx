@@ -1,5 +1,5 @@
 import Section from "@/components/Sections/Section";
-import RegistrationForm from "@/components/ContactForms/RegistrationForm/RegistrationForm";
+import RegistrationForm from "@/components/ContactForms/RegistrationForm";
 
 export const metadata = {
   title: "Register | Quack Recruitment & Training",

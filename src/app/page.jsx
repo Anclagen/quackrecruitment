@@ -31,7 +31,7 @@ const Home = () => {
         <BannerHome
           title={`Quack \nRecruitment & Training`}
           slogan="Whether your looking to recruit, or train the best talent... we've got you covered!"
-          imgSrc="images/banners/pexels-sevenstorm-juhaszimrus-443383.jpg"
+          imgSrc="/images/banners/pexels-sevenstorm-juhaszimrus-443383.jpg"
           imgAlt="Descriptive Image Alt Text"
           links={[
             { label: "Recruitment", path: "/recruitment", color: "quackred" },
@@ -157,10 +157,10 @@ const Home = () => {
           <FourImageStretch
             title="Unleash Your Potential with Our Training Programs"
             images={[
-              { src: "images/pexels-christina-morillo-1181524.jpg", alt: "Woman sitting at desk" },
-              { src: "images/pexels-movidagrafica-barcelona-1474993.jpg", alt: "Welder at work" },
-              { src: "images/pexels-cottonbro-studio-3205737.jpg", alt: "Security camera on wall" },
-              { src: "images/pexels-elevate-1267338.jpg", alt: "Forklift moving pallet in warehouse" },
+              { src: "/images/pexels-christina-morillo-1181524.jpg", alt: "Woman sitting at desk" },
+              { src: "/images/pexels-movidagrafica-barcelona-1474993.jpg", alt: "Welder at work" },
+              { src: "/images/pexels-cottonbro-studio-3205737.jpg", alt: "Security camera on wall" },
+              { src: "/images/pexels-elevate-1267338.jpg", alt: "Forklift moving pallet in warehouse" },
             ]}
           >
             <p className="mt-4 text-lg leading-6">
@@ -185,41 +185,6 @@ const Home = () => {
             </div>
           </FourImageStretch>
         </Section>
-        {/* <Section bgColor="bg-zinc-200">
-          <CTASection
-            titleBlack="Got a position to fill ?"
-            titlePurple="Get the skilled staff you need."
-            text="QS Recruitment ensures you get the talent you require. We manage all aspects, granting you peace of mind that your roles are expertly filled."
-            linkText="Enquire Today"
-            linkHref="/register-employer"
-            image="/images/hardhat.png"
-          />
-        </Section> */}
-
-        {/* Testimonials to be added  */}
-        {/* <Section bgColor="bg-zinc-950 text-white">
-          <h2 className="text-3xl text-center mb-10 font-semibold">What Our Clients Say</h2>
-          <CardSection>
-            <TestimonialCard
-              userImage="/pexels-andrea-piacquadio-3778603.jpg"
-              testimonialText="Working with Quack Specialists was an enlightening experience. They took the time to understand our company culture and delivered candidates that were not only skilled but also aligned with our values. Their thorough approach ensured we found the right fit every time."
-              userName="Sarah Mitchell"
-              userPosition="HR Manager, TechSolutions Inc."
-            />
-            <TestimonialCard
-              userImage="/pexels-andrea-piacquadio-3778603.jpg"
-              testimonialText="I've partnered with many recruitment agencies over the years, but the professionalism and precision of Quack Specialists stand out. They consistently matched us with top-tier talent, saving us countless hours in the hiring process."
-              userName="David Alvarez"
-              userPosition="COO, Innovate Enterprises"
-            />
-            <TestimonialCard
-              userImage="/pexels-andrea-piacquadio-3778603.jpg"
-              testimonialText="The team at Quack Specialists are truly recruitment experts. Their insights into the job market and understanding of our industry ensured that we got candidates who were ready to hit the ground running. A truly commendable service!"
-              userName="Maya Lindstrom"
-              userPosition="Director of Talent Acquisition, Nexus Group"
-            />
-          </CardSection>
-        </Section> */}
       </main>
     </>
   );

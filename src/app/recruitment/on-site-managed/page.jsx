@@ -1,8 +1,8 @@
 import BannerHalf from "@/components/Banner/BannerHalf";
 import Section from "@/components/Sections/Section";
-import RecruitmentQuery from "@/components/ContactForms/RecruitmentQuery/RecruitmentQuery";
+import RecruitmentQuery from "@/components/ContactForms/RecruitmentQuery";
 import recruitmentPages from "@/components/data/recruitment/recruitmentPages";
-import OurServices from "@/components/OurServices";
+import OurServices from "@/components/templates/recruitment/OurServices";
 import FAQSection from "@/components/Sections/FAQSection";
 import { OnSiteFAQ } from "@/components/data/recruitment/recruitmentFAQ";
 
@@ -21,7 +21,7 @@ const OnSiteManagedService = () => {
         <BannerHalf
           title={recruitmentPages[2].title}
           slogan="Flexible Talent Solutions, Tailored for Success"
-          imgSrc="images/banners/construction-2578.jpg"
+          imgSrc="/images/banners/construction-2578.jpg"
           imgAlt="Descriptive Image Alt Text"
           links={[]}
           position="center"

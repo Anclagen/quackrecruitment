@@ -1,9 +1,9 @@
 import BannerHalf from "@/components/Banner/BannerHalf";
 import Section from "@/components/Sections/Section";
-import RecruitmentQuery from "@/components/ContactForms/RecruitmentQuery/RecruitmentQuery";
+import RecruitmentQuery from "@/components/ContactForms/RecruitmentQuery";
 import recruitmentPages from "@/components/data/recruitment/recruitmentPages";
 import FAQSection from "@/components/Sections/FAQSection";
-import OurServices from "@/components/OurServices";
+import OurServices from "@/components/templates/recruitment/OurServices";
 import { tempFAQ } from "@/components/data/recruitment/recruitmentFAQ";
 
 export const metadata = {
@@ -21,7 +21,7 @@ const TemporaryRecruitment = () => {
         <BannerHalf
           title="Temporary Recruitment"
           slogan="Flexible Talent Solutions, Tailored for Success"
-          imgSrc="images/banners/pexels-pixabay-162553.jpg"
+          imgSrc="/images/banners/pexels-pixabay-162553.jpg"
           imgAlt="Descriptive Image Alt Text"
           links={[]}
         />
