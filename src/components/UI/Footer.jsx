@@ -40,7 +40,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="px-2">
-            <h3 className="mb-3 text-xl font-bold max-w-fit">Job Seekers</h3>
+            <h3 className="mb-3 text-xl font-bold max-w-fit">Recruitment</h3>
             <ul>
               {[
                 { path: "/recruitment/listings", label: "Listings" },
@@ -66,6 +66,8 @@ const Footer = () => {
                 { path: "/training/sia", label: "Security Industry Authority (SIA)" },
                 { path: "/training/customer-service-administration", label: "Admin & Customer Service" },
                 { path: "/training/cscs", label: "Construction Skills (CSCS)" },
+                { path: "/training/fork-lift", label: "Forklift" },
+                { path: "/training/welding", label: "Welding" },
               ].map((route) => (
                 <li key={route.path}>
                   <Link prefetch={false} href={`${route.path}`} className={`${location === route.path ? "underline" : ""} hover:underline hover:text-white text-white text-lg`}>
