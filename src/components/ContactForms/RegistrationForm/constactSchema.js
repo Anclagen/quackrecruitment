@@ -64,9 +64,9 @@ export const workEligibilitySchema = Yup.object().shape({
     .max(1000000, "Salary seems too high."),
   "specific-role": Yup.string().required("Specific role is required.").oneOf(["yes", "no"], "Select either yes or no"),
   "specific-role-info": Yup.string().when("specific-role", { is: "yes", then: () => Yup.string().required("Specific role info is required").max(150, "Role should not exceed 150 characters.") }),
-  transport: Yup.string().required("Transport is required.").max(150, "Transport should not exceed 150 characters."),
+  transport: Yup.string().required("Transport is required.").max(200, "Transport should not exceed 200 characters."),
   disabilities: Yup.string().nullable().oneOf(["yes", "no"], "Select either yes or no"),
-  "disabilities-info": Yup.string().when("disability", { is: "yes", then: () => Yup.string().required("Disability info is required").max(150, "Disability info should not exceed 150 characters.") }),
+  "disabilities-info": Yup.string().when("disability", { is: "yes", then: () => Yup.string().required("Disability info is required").max(200, "Disability info should not exceed 200 characters.") }),
   "ni-number": Yup.string().max(9, "National Insurance number cannot exceed 9 characters").required("NI number is required"),
   "share-code": Yup.string().max(9, "Share code cannot exceed 9 characters"),
 });

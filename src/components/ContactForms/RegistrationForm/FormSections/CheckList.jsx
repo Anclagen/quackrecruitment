@@ -20,7 +20,7 @@ const Checklist = () => (
         {"Utility bills, bank statements, or any official mail addressed to you. If you've moved within the last 5 years, have documents from previous addresses as well."}
       </li>
     </ul>
-    <p className="my-2">These should each be in a PDF, jpeg, jpg or png format and no larger than 1MB in size.</p>
+    <p className="my-2">These should each be in a PDF, jpeg, jpg or png format and no larger than 3MB in size.</p>
     <h3 className="my-2"> Additional Information:</h3>
     <ul className="list-disc ms-4">
       <li>

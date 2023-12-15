@@ -170,7 +170,11 @@ const RegistrationForm = () => {
                   {activeSection === 5 && (
                     <div className="text-center mt-10 flex flex-col gap-6">
                       <label>
-                        I herby confirm that the information I have provided is correct and I agree to the terms and conditions.*
+                        I herby confirm that the information I have provided is correct and I agree to the{" "}
+                        <Link className="text-quackred-800" prefetch={false} target="_blank" href={"/legal/privacy-policy"}>
+                          terms and conditions.
+                        </Link>
+                        *
                         <input className="w-5 h-5 ms-3 mt-1" type="checkbox" checked={agree} onChange={() => setAgree(!agree)} />
                       </label>
                       {formErrors && (
