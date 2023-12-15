@@ -1,6 +1,12 @@
 export const initialValues = {
   "contact-name": "",
   email: "",
-  subject: "",
+  phone: "",
+  company: "",
+  locations: "",
+  industry: "",
+  vacancies: "",
+  type: "",
   message: "",
+  botInput: "",
 };

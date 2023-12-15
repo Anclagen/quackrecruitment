@@ -87,12 +87,14 @@ const RegistrationForm = () => {
   if (success) {
     return (
       <div
-        className={`"p-5 text-center bg-zinc-300 text-black w-full max-w-lg rounded-xl shadow-xl transition-all duration-300 shadow-quackred-300 transition-height duration-2000 transform reduceHeightCan`}
+        className={`p-5 text-center bg-zinc-300 text-black w-full max-w-lg rounded-xl shadow-xl transition-all duration-300 shadow-quackred-300 transition-height duration-2000 transform reduceHeightCan`}
       >
         <div className="my-auto max-h-fit p-4">
           <span className="material-icons text-green-500 text-6xl mt-6 mb-4">check_circle</span>
           <h2 className="text-xl text-center mb-6">Submission Successful!</h2>
-          <p className="my-8">Thank you for submitting your details. We will get back to you shortly!</p>
+          <p className="my-8">
+            Thank you for submitting your details. We will get back to you shortly! You should have received an email confirming this receipt shortly, make sure you check your junk mail.
+          </p>
         </div>
       </div>
     );
