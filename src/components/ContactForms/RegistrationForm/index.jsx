@@ -53,8 +53,13 @@ const RegistrationForm = () => {
         }
       }
 
-      // cf7 dev=16
-      const response = await fetch("https://content.quackrecruitmentandtraining.co.uk/wp-json/contact-form-7/v1/contact-forms/9/feedback", {
+      // cf7 9
+      // const response = await fetch("https://content.quackrecruitmentandtraining.co.uk/wp-json/contact-form-7/v1/contact-forms/9/feedback", {
+      //   method: "POST",
+      //   body: formData,
+      // });
+
+      const response = await fetch("#", {
         method: "POST",
         body: formData,
       });
