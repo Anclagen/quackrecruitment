@@ -17,8 +17,51 @@ const CandidateRegistrationFallback = () => {
 
   const handleCopyText = async () => {
     const textToCopy = `
-Please attach the following documents before sending your registration details:
-... [Include all the other content here]
+    Candidate Registration
+
+    Attachments
+    Please attach the following documents before sending your registration details:
+     - Proof of address*
+     - ID* (some examples passport, full birth certificate, and BRP cards)
+     - National insurance Number* (NI Card, P45, P60, HMRC Letter, Payslip with NI Number on)
+     - Sharecode (If you have a foreign passport, BRP, visa. A sharecode is required.)
+     - CV (optional)
+    
+    Personal Details
+    Title*: 
+    First Name*: 
+    Middle Name:
+    Last Name*: 
+    Date of Birth* (yyyy-mm-dd): 
+    Gender*: 
+    Ethnicity*:
+    National Insurance number*: 
+    Sharecode (If you have a foreign passport, BRP, visa. A sharecode is required): 
+    Email*: 
+    Mobile Number*: 
+    Landline Number: 
+    
+    Address Details
+    address*:
+    if you have lived at your current address for less than 5 years please provide previous address details below
+    
+    Job Preference & Work Eligibility
+    Desired Salary/Hourly Rate (£)*:
+    Are you appling for a specific role?* (if yes provide details)
+    What means of transport do you have?*
+    Do You Have Any Disabilities?* (if yes provide details)
+    National Insurance Number*:
+    Sharecode (If you have a foreign passport, BRP, visa. A sharecode is required):
+    
+    Bank Details
+    Account Holder: 
+    Account Number: 
+    Sort Code: 
+    Bank Branch: 
+    
+    Emergency Contact
+    Name:
+    Phone Number:
       `;
 
     try {
