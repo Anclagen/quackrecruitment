@@ -27,15 +27,15 @@ const TrainingEnquiryForm = () => {
         formData.append(key, values[key]);
       }
       // CF7 11
-      const response = await fetch("https://content.quackrecruitmentandtraining.co.uk/wp-json/contact-form-7/v1/contact-forms/11/feedback", {
-        method: "POST",
-        body: formData,
-      });
-
-      // const response = await fetch("#", {
+      // const response = await fetch("https://content.quackrecruitmentandtraining.co.uk/wp-json/contact-form-7/v1/contact-forms/11/feedback", {
       //   method: "POST",
       //   body: formData,
       // });
+
+      const response = await fetch("#", {
+        method: "POST",
+        body: formData,
+      });
 
       const data = await response.json();
 
