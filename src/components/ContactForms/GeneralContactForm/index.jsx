@@ -49,7 +49,7 @@ const GeneralContactForm = () => {
         {() => (
           <div
             className={`p-5 bg-zinc-300 text-black w-full max-w-lg rounded-xl shadow-lg transition-all shadow-quackred-300 mx-auto transition-height duration-2000 transform ${
-              formSubmittedSuccessfully ? "h-[300px]" : "h-[570px]"
+              formSubmittedSuccessfully ? "h-[300px]" : "h-[585px]"
             }`}
           >
             {formSubmittedSuccessfully ? (

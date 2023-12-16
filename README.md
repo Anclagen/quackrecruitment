@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Quack Recruitment & Training
+
+Updated website for Quack Recruitment & Training.
 
 ## Getting Started
 
@@ -14,21 +16,33 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [formik](https://formik.org/)
+- [yup](https://www.npmjs.com/package/yup)
+- [date-fns](https://date-fns.org/)
+- [react-spring](https://www.react-spring.io/)
+- [react-intersection-observer](https://www.npmjs.com/package/react-intersection-observer)
+- [material-icons](https://material-ui.com/components/material-icons/)
+- [material-symbols](https://material.io/resources/icons/?style=baseline)
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This site is deployed as a static next.js site on Ionos at [https://quackrecruitmentandtraining.co.uk/](https://quackrecruitmentandtraining.co.uk/).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Authors
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Alexander Barrett - [alexander-barrett](https://github.com/Anclagen)
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Code
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The source code of this project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+### Content and Logos
+
+The content, images, and Quack Recruitment logos included in this project are proprietary assets and are not licensed for reuse or redistribution. These assets are the property of Quack Group and/or its affiliates and are provided in this repository for reference purposes only.
