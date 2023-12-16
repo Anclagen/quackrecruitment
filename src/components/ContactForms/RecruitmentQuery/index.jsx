@@ -46,7 +46,7 @@ const RecruitmentQuery = () => {
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      setFormErrors("There was a problem submitting the form. Please try again later.");
+      setFormErrors("There was a problem submitting the form. Please try again later. If the problem persists, please contact us directly at ");
     }
   };
 
@@ -170,7 +170,14 @@ const RecruitmentQuery = () => {
                           *
                           <input className="w-5 h-5 ms-3 mt-1" type="checkbox" checked={agree} onChange={() => setAgree(!agree)} />
                         </label>
-                        {formErrors && <div className="error error-message">{formErrors}</div>}
+                        {formErrors && (
+                          <div className="error error-message">
+                            {formErrors}
+                            <a href="mailto:hello@quackrecruitment.co.uk" className="text-quackred-800 hover:underline">
+                              hello@quackrecruitment.co.uk
+                            </a>
+                          </div>
+                        )}
                         <button className={`${!agree ? "opacity-50" : "hover:bg-quackred-600"} bg-quackred-900 mb-2 hover:text-white text-white py-2 px-4 rounded`} disabled={!agree} type="submit">
                           Submit
                         </button>

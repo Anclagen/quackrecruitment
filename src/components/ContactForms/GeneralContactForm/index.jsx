@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Form, Formik, Field, ErrorMessage } from "formik";
 import ErrorBoundary from "../ErrorBoundary";
 import { validationSchema } from "./schema";

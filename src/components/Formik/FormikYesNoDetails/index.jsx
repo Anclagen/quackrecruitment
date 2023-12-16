@@ -1,4 +1,4 @@
-import { Field, useField } from "formik";
+import { Field, useField, ErrorMessage } from "formik";
 import FormikField from "../FormikFeild"; // Assuming FormikField is in the same directory
 
 function FormikYesNoDetails({ name, question, detailsLabel, placeholder = "" }) {
@@ -23,7 +23,7 @@ function FormikYesNoDetails({ name, question, detailsLabel, placeholder = "" }) 
       </div>
       {field.value === "yes" && detailsLabel && (
         <div className="mt-1">
-          <FormikField label={detailsLabel} type="text" id={`${name}-info`} placeholder={placeholder} />
+          <FormikField label={detailsLabel} type="text" id={`${name}-info`} name={`${name}-info`} placeholder={placeholder} />
         </div>
       )}
     </>
