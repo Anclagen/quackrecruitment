@@ -48,7 +48,7 @@ const Contact = () => {
                 <address className="mt-2 text-lg leading-relaxed">
                   Quack Recruitment,
                   <br />
-                  Eastway Enterprises Centre,
+                  Business & Technology Centre,
                   <br />
                   Bessemer Drive,
                   <br />
